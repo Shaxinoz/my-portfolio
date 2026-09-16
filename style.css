@@ -81,3 +81,18 @@ body {
   background-color: #5b21b6;
   border-radius: 2px;
 }
+.header-top-nav-bar {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 63.19px;
+
+  /* (Padding) */
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
