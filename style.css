@@ -96,3 +96,71 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
+/* Main margin */
+.main-margin {
+  max-width: 1280px;
+  width: 100%;
+  margin-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 63.19px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Pastdagi 2 ta blokcha */
+.bottom-blocks {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+/* Profil qismi */
+.hero-block {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+}
+.hero-avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.hero-content h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #111827;
+}
+
+.hero-title {
+  margin: 4px 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b21a8; /* Binafsha rang */
+}
+
+.hero-description {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #6b7280;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.btn-works {
+  background-color: #6b21a8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
