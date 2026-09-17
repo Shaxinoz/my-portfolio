@@ -96,11 +96,11 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
 }
-/* Main margin */
+
+/* Main:margin */
 .main-margin {
   max-width: 1280px;
   width: 100%;
-  margin-x: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 63.19px;
@@ -109,6 +109,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.main-content {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  box-sizing: border-box;
 }
 
 /* Pastdagi 2 ta blokcha */
@@ -144,7 +156,7 @@ body {
   margin: 4px 0 12px 0;
   font-size: 16px;
   font-weight: 600;
-  color: #6b21a8; /* Binafsha rang */
+  color: #6b21a8;
 }
 
 .hero-description {
@@ -163,4 +175,132 @@ body {
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.bottom-blocks {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.tech-block,
+.counter-block {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+.tech-block h3,
+.counter-block h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.tag {
+  background: #f3f0ff;
+  color: #6b46c1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.counter-box {
+  background: #f8f7ff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.counter-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-counter {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-margin {
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .bottom-blocks {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .main-margin {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-block {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+  .hero-description {
+    max-width: 100%;
+  }
+  .bottom-blocks {
+    flex-direction: column;
+  }
+
+  .tech-tags {
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
