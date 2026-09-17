@@ -2,26 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #f8f6ff;
-  color: #333;
+  background-color: #fcf8ff; /* Figma Home Page fon rangi */
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Navbar stili */
+/* 2. HEADER - TOPNAVBAR */
+.header-top-nav-bar {
+  width: 100%;
+  max-width: 1280px; /* Figma Width: 1,280px */
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); /* Figma Drop shadow */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
-  background-color: #ffffff;
+  width: 100%;
+  padding-left: 40px; /* Figma Padding Left */
+  padding-right: 40px; /* Figma Padding Right */
+  height: 63.19px; /* Figma Height */
 }
 
 .logo h2 {
   color: #5b21b6;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .logo h2 span {
@@ -37,14 +62,12 @@ body {
   padding-bottom: 5px;
 }
 
-/* Aktiv link tagiga chiziqcha */
 .nav-links a.active {
   color: #5b21b6;
   font-weight: bold;
   border-bottom: 3px solid #5b21b6;
 }
 
-/* Meni yollang tugmasi */
 .btn-primary {
   background-color: #5b21b6;
   color: white;
@@ -54,10 +77,26 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-/* Sarlavha stili */
+
+/* 3. MAIN CONTENT AREA */
+main,
+.main-margin,
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px; /* Figma Width: 1,280px */
+  padding-left: 40px; /* Figma Padding Left */
+  padding-right: 40px; /* Figma Padding Right */
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .page-title {
   text-align: center;
-  margin: 50px 0 30px;
+  margin: 10px 0 20px;
 }
 
 .page-title h1 {
@@ -81,55 +120,8 @@ body {
   background-color: #5b21b6;
   border-radius: 2px;
 }
-.header-top-nav-bar {
-  width: 100%;
-  max-width: 1280px;
-  min-height: 63.19px;
 
-  /* (Padding) */
-  padding-left: 40px;
-  padding-right: 40px;
-
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Main:margin */
-.main-margin {
-  max-width: 1280px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 63.19px;
-  padding: 0 40px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.main-content {
-  max-width: 1200px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 48px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  box-sizing: border-box;
-}
-
-/* Pastdagi 2 ta blokcha */
-.bottom-blocks {
-  display: flex;
-  gap: 24px;
-  width: 100%;
-}
-/* Profil qismi */
+/* Hero Section */
 .hero-block {
   background-color: #ffffff;
   border-radius: 16px;
@@ -139,6 +131,7 @@ body {
   gap: 32px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
 }
+
 .hero-avatar img {
   width: 180px;
   height: 180px;
@@ -146,6 +139,7 @@ body {
   object-fit: cover;
   display: block;
 }
+
 .hero-content h1 {
   margin: 0;
   font-size: 28px;
@@ -177,6 +171,7 @@ body {
   cursor: pointer;
 }
 
+/* Bottom Grid Section */
 .bottom-blocks {
   display: flex;
   gap: 24px;
@@ -189,9 +184,9 @@ body {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 32px;
-  box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
 }
+
 .tech-block h3,
 .counter-block h3 {
   margin-top: 0;
@@ -203,6 +198,7 @@ body {
 .tech-tags {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -257,29 +253,79 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.main-margin {
+/* 4. FOOTER */
+footer,
+.footer-container {
   width: 100%;
-  max-width: 1280px;
-  box-sizing: border-box;
+  max-width: 1280px; /* Figma Width: 1,280px */
+  background-color: #e9e6f8; /* Figma Footer background */
+  padding-top: 46px; /* Figma Padding Top */
+  padding-bottom: 48px; /* Figma Padding Bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
 }
-@media (max-width: 768px) {
-  .bottom-blocks {
-    flex-direction: column;
-  }
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
 }
+
+.footer-copyright {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #5b21b6;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links a {
+  color: #6b7280;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #5b21b6;
+}
+
+/* 5. RESPONSIVE (MOBILE) STYLES */
 @media (max-width: 992px) {
   .navbar {
-    padding: 15px 20px;
-  }
-
-  .main-margin {
-    padding: 0 20px;
-    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -289,9 +335,11 @@ img {
     text-align: center;
     padding: 24px;
   }
+
   .hero-description {
     max-width: 100%;
   }
+
   .bottom-blocks {
     flex-direction: column;
   }
