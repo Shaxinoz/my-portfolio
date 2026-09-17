@@ -1,12 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahnoza Portfoliosi - Men Haqimda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-top-nav-bar">
+      <div class="navbar">
+        <div class="logo">
+          <h2>Shahnoza Portfoliosi</h2>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Asosiy</a>
+          <a href="about.html" class="active">Men haqimda</a>
+          <a href="contact.html">Kontakt</a>
+        </nav>
+        <button class="btn-primary">Meni yollang</button>
+      </div>
+    </header>
+
+    <!-- Main Area -->
+    <main class="main-margin">
+      <!-- Title Section -->
+      <div class="about-title-box">
+        <h1>Men Haqimda</h1>
+        <p class="about-subtitle">
+          Toza va zamonaviy interfeyslar yaratishga ishtiyoqli fidoyi dasturchi
+          Shahnoza bilan tanishing.
+        </p>
+      </div>
+
+      <!-- Top Section: Bio & Qiziqishlar -->
+      <div class="about-top-grid">
+        <!-- Profile Card -->
+        <div class="hero-block profile-card">
+          <div class="hero-avatar">
+            <img src="https://picsum.photos/140" alt="Shahnoza" />
+          </div>
+          <div class="hero-content">
+            <h2>Shahnoza</h2>
+            <p class="role-badge">BACKEND DEVELOPER</p>
+            <p class="bio-text">
+              Salom! Men Shahnozaman. Men oddiy, funktsional va vizual jihatdan
+              jozibali veb-tajribalarni yaratishni yoqtiradigan dasturchisiman.
+              Menda yangi texnologiyalarni o'rganish orqali mahoratimni doimiy
+              ravishda takomillashtirishga kuchli ishtiyoq bor.
+            </p>
+          </div>
+        </div>
+
+        <!-- Qiziqishlar Card -->
+        <div class="tech-block interests-card">
+          <h3><span>♡</span> Mening qiziqishlarim</h3>
+          <div class="tech-tags">
+            <span class="tag">Koding</span>
+            <span class="tag">O'qish</span>
+            <span class="tag">Musiqa</span>
+            <span class="tag">Sayohat</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section: Skills & Counter -->
+      <div class="bottom-blocks">
+        <!-- Texnik Bilimlarim -->
+        <div class="tech-block skills-card">
+          <h3>&lt;&gt; Texnik Bilimlarim</h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>HTML</span>
+              <span class="skill-level">Intermediate (80%)</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>CSS</span>
+              <span class="skill-level">Intermediate (75%)</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span>JavaScript</span>
+              <span class="skill-level">Beginner (60%)</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Belgilar sanovchi -->
+        <div class="counter-block text-counter-card">
+          <h3>Tt Mini Funksiya: Belgilar sanovchi</h3>
+          <p class="counter-desc">
+            Belgilar sonining dinamik ravishda yangilanishini ko'rish uchun
+            quyidagi matn maydoniga yozing (UI ko'rinishi).
+          </p>
+
+          <textarea
+            class="counter-textarea"
+            placeholder="Xabaringizni shu yerga yozing..."
+          ></textarea>
+
+          <div class="char-count-box">
+            <span>Belgilar soni:</span>
+            <span class="char-count-num">0</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <p class="footer-title">Amethyst Portfolio</p>
+      <p class="footer-copyright">
+        © 2026 Portfolio. Barcha huquqlar himoyalangan.
+      </p>
+      <div class="footer-links">
+        <a href="#">Maxfiylik siyosati</a>
+        <a href="#">Xizmat ko'rsatish shartlari</a>
+      </div>
+    </footer>
+  </body>
 </html>
