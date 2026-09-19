@@ -1,12 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-nav-bar">
+        <a href="index.html" class="logo">Shahnoza Portfoliosi</a>
+
+        <nav class="nav-links">
+          <a href="index.html">Asosiy</a>
+          <a href="about.html">Men haqimda</a>
+          <a href="contact.html" class="active">Kontakt</a>
+        </nav>
+
+        <button class="hire-btn">Meni yollang</button>
+      </div>
+    </header>
+
+
+    <!-- Main Content Margin Container -->
+<main class="main-content-margin">
+
+  <!-- Sarlavha qismi -->
+  <div class="page-title">
+    <h1>Men <span class="underline">bilan bog'laning</span></h1>
+  </div>
+
+  <!-- Forma va Ijtimoiy tarmoqlar kartochkalari bloki -->
+  <div class="contact-cards-wrapper">
     
-</body>
+    <!-- Chap tomondagi Forma kartochkasi -->
+    <div class="card form-card">
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Ism</label>
+          <input type="text" id="name" placeholder="Ismingizni kiriting">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email manzilingizni kiriting">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Xabar</label>
+          <textarea id="message" rows="4" placeholder="Xabaringizni yozing..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Yuborish</button>
+      </form>
+    </div>
+
+    <!-- O'ng tomondagi Ijtimoiy tarmoqlar kartochkasi -->
+    <div class="card social-card">
+      <h3>Ijtimoiy tarmoqlar</h3>
+      <ul class="social-links">
+        <li><a href="#"><i class="fa-regular fa-square"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa-regular fa-paper-plane"></i> Telegram</a></li>
+        <li><a href="#"><i class="fa-regular fa-circle-play"></i> YouTube</a></li>
+        <li><a href="#"><i class="fa-regular fa-bookmark"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Pastdagi binafsha rangli bildirishnoma bloki -->
+  <div class="info-banner">
+    <p>Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol bog'lanishingiz mumkin!</p>
+  </div>
+
+</main>
+
+
+
+
+
+
+  </body>
 </html>
