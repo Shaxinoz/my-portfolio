@@ -3,82 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome ikonkalari ulanishi -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio - Kontakt</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="top-nav-bar">
         <a href="index.html" class="logo">Shahnoza Portfoliosi</a>
-
         <nav class="nav-links">
           <a href="index.html">Asosiy</a>
           <a href="about.html">Men haqimda</a>
           <a href="contact.html" class="active">Kontakt</a>
         </nav>
-
         <button class="hire-btn">Meni yollang</button>
       </div>
     </header>
 
+    <!-- MAIN CONTENT -->
+    <main class="main-content-margin">
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Men <span class="underline">bilan bog'laning</span></h1>
+      </div>
 
-    <!-- Main Content Margin Container -->
-<main class="main-content-margin">
+      <!-- Contact Cards Wrapper -->
+      <div class="contact-cards-wrapper">
+        <!-- Chap tomondagi Forma -->
+        <div class="card form-card">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">Ism</label>
+              <input type="text" id="name" placeholder="Ismingizni kiriting" />
+            </div>
 
-  <!-- Sarlavha qismi -->
-  <div class="page-title">
-    <h1>Men <span class="underline">bilan bog'laning</span></h1>
-  </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email manzilingizni kiriting"
+              />
+            </div>
 
-  <!-- Forma va Ijtimoiy tarmoqlar kartochkalari bloki -->
-  <div class="contact-cards-wrapper">
-    
-    <!-- Chap tomondagi Forma kartochkasi -->
-    <div class="card form-card">
-      <form action="#">
-        <div class="form-group">
-          <label for="name">Ism</label>
-          <input type="text" id="name" placeholder="Ismingizni kiriting">
+            <div class="form-group">
+              <label for="message">Xabar</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Xabaringizni yozing..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Yuborish</button>
+          </form>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email manzilingizni kiriting">
+        <!-- O'ng tomondagi Ijtimoiy Tarmoqlar -->
+        <div class="card social-card">
+          <h3>Ijtimoiy tarmoqlar</h3>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="message">Xabar</label>
-          <textarea id="message" rows="4" placeholder="Xabaringizni yozing..."></textarea>
+      <!-- Bottom Banner -->
+      <div class="info-banner">
+        <p>
+          Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol
+          bog'lanishingiz mumkin!
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-title">Amethyst Portfolio</p>
+        <p class="footer-copy">
+          &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
+        </p>
+        <div class="footer-links">
+          <a href="#">Maxfiylik siyosati</a>
+          <a href="#">Xizmat ko'rsatish shartlari</a>
         </div>
-
-        <button type="submit" class="btn-submit">Yuborish</button>
-      </form>
-    </div>
-
-    <!-- O'ng tomondagi Ijtimoiy tarmoqlar kartochkasi -->
-    <div class="card social-card">
-      <h3>Ijtimoiy tarmoqlar</h3>
-      <ul class="social-links">
-        <li><a href="#"><i class="fa-regular fa-square"></i> Instagram</a></li>
-        <li><a href="#"><i class="fa-regular fa-paper-plane"></i> Telegram</a></li>
-        <li><a href="#"><i class="fa-regular fa-circle-play"></i> YouTube</a></li>
-        <li><a href="#"><i class="fa-regular fa-bookmark"></i> LinkedIn</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Pastdagi binafsha rangli bildirishnoma bloki -->
-  <div class="info-banner">
-    <p>Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol bog'lanishingiz mumkin!</p>
-  </div>
-
-</main>
-
-
-
-
-
-
+      </div>
+    </footer>
   </body>
 </html>
