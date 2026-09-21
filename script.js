@@ -33,3 +33,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// BUTTON EVENT (Tugma bosilishi hodisasi)
+const allButtons = document.querySelectorAll(".btn-works, .nav-btn, button");
+allButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const buttonText = (button.textContent || button.value || "").trim();
+
+    if (buttonText.includes("Meni yo'llang")) {
+      alert("Aloqa bo'limiga o'tilmoqda...");
+    } else if (buttonText.includes("Mening ishlarim")) {
+      alert("Mening ishlarim bo'limiga o'tilmoqda...");
+    }
+  });
+});
+const contactForm = document.querySelector("form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Xabar yuborildi! Tez orada siz bilan bog'lanamiz.");
+    contactForm.reset();
+  });
+}
