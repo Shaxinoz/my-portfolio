@@ -80,12 +80,6 @@ body {
   transition: width 0.3s ease;
 }
 
-/* .nav-links a.active,
-.nav-links a:hover {
-  color: #5b21b6;
-  border-bottom: 2px solid #6c5ce7;
-} */
-
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
@@ -283,7 +277,7 @@ main,
   border-radius: 999px;
 }
 
-/* 2. MENING QIZIQISHLARIM BLOKI (Figma) */
+/* 2. MENING QIZIQISHLARIM BLOKI Figmadan */
 .interests-card {
   flex: 1;
   background-color: #f3e8ff;
@@ -424,7 +418,6 @@ main,
   color: #ffffff;
 }
 
-/* Counter & Textarea */
 /* Counter & Textarea (Figma dizayniga strictly moslashtirildi) */
 .counter-block {
   background-color: #f3e8ff;
@@ -452,7 +445,7 @@ main,
   margin-bottom: 20px;
 }
 
-/* Matn kiritish oynasi (Textarea) */
+/*(Textarea) */
 .counter-textarea {
   width: 100%;
   height: 110px;
@@ -633,5 +626,3 @@ footer,
 @view-transition {
   navigation: auto;
 }
-
-

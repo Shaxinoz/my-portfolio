@@ -58,3 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// const instagramBtn = document.querySelector(".social-link");
+
+// if (instagramBtn) {
+//   instagramBtn.addEventListener("click", (e) => {
+//     e.preventDefault(); // Sahifa qayta yuklanib ketishini to'xtatadi
+//     window.open("https://instagram.com/shahnozaisha", "_blank");
+//   });
+// }
