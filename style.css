@@ -211,27 +211,6 @@ main,
   width: 100%;
 }
 
-.tech-block,
-.counter-block,
-.profile-card,
-.interests-card,
-.card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.tech-block,
-.counter-block {
-  flex: 1;
-}
-.profile-card {
-  flex: 2;
-}
-.interests-card {
-  flex: 1;
-}
 .form-card {
   flex: 1.8;
 }
@@ -239,27 +218,108 @@ main,
   flex: 1;
 }
 
-.tech-block h3,
-.counter-block h3,
-.social-card h3 {
-  margin-bottom: 20px;
+/* Karta bloklarining umumiy karkasi */
+.profile-card,
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.profile-card {
+  flex: 2;
+}
+
+/* 1. TEXNIK BILIMLARIM BLOKI */
+.tech-block {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.tech-block h3 {
   font-size: 18px;
-  color: #1a1a1a;
-}
-
-.tech-tags {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
-.tag {
-  background: #f3f0ff;
-  color: #6b46c1;
-  padding: 8px 16px;
-  border-radius: 8px;
+.skill-item {
+  margin-bottom: 16px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
   font-size: 14px;
   font-weight: 500;
+  color: #374151;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #6b21a8;
+  border-radius: 999px;
+}
+
+/* 2. MENING QIZIQISHLARIM BLOKI (Figma) */
+.interests-card {
+  flex: 1;
+  background-color: #f3e8ff;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.interests-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.interests-card h3 span {
+  color: #6b21a8;
+}
+
+.interests-tags,
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interests-card .tag,
+.tag {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
 }
 
 /* Skills & Counter Section */
