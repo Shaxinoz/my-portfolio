@@ -18,13 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     counterButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        const text = button.textContent.trim();
+        // Matnni kichik harfga o'tkazib tekshiramiz (katta-kichik harf farq qilmasligi uchun)
+        const text = button.textContent.trim().toLowerCase();
 
         if (text === "+") {
           count++;
         } else if (text === "-") {
           count--;
-        } else if (text === "Qaytarish") {
+        } else if (text === "qaytarish" || text === "reset") {
           count = 0;
         }
 
@@ -32,27 +33,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-});
 
-// BUTTON EVENT (Tugma bosilishi hodisasi)
-const allButtons = document.querySelectorAll(".btn-works, .nav-btn, button");
-allButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const buttonText = (button.textContent || button.value || "").trim();
+  // 3. TUGMALAR HODISASI
+  const allButtons = document.querySelectorAll(".btn-works, .nav-btn, button");
+  allButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const buttonText = (button.textContent || button.value || "").trim();
 
-    if (buttonText.includes("Meni yo'llang")) {
-      alert("Aloqa bo'limiga o'tilmoqda...");
-    } else if (buttonText.includes("Mening ishlarim")) {
-      alert("Mening ishlarim bo'limiga o'tilmoqda...");
-    }
+      if (buttonText.includes("Meni yo'llang")) {
+        alert("Aloqa bo'limiga o'tilmoqda...");
+      } else if (buttonText.includes("Mening ishlarim")) {
+        alert("Mening ishlarim bo'limiga o'tilmoqda...");
+      }
+    });
   });
-});
-const contactForm = document.querySelector("form");
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Xabar yuborildi! Tez orada siz bilan bog'lanamiz.");
-    contactForm.reset();
-  });
-}
+  // 4. FORMA YUBORILISHI
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Xabar yuborildi! Tez orada siz bilan bog'lanamiz.");
+      contactForm.reset();
+    });
+  }
+});
