@@ -35,4 +35,4 @@ my-portfolio/
 ## 🔗 Demo Havola
 
 Loyihaning jonli versiyasini quyidagi havola orqali ko'rishingiz mumkin:
-👉 [Shahnoza Portfolio Live](https://shaxinoz.github.io/my-portfolio/)
+👉 [Shahnoza Portfolio Live] https://shaxinoz.github.io/my-portfolio/
