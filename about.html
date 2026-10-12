@@ -3,136 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shahnoza Portfoliosi - Men Haqimda</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Shahnoza Portfolio - Men haqimda</title>
+    <meta
+      name="description"
+      content="Shahnoza haqida batafsil ma'lumot, qiziqishlar va ko'nikmalar sahifasi"
+    />
+    <link rel="stylesheet" href="about.css" />
   </head>
+  
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="top-nav-bar">
-        <a href="index.html" class="logo">Shahnoza Portfoliosi</a>
-        <nav class="nav-links">
-          <a href="index.html">Asosiy</a>
-          <a href="about.html" class="active">Men haqimda</a>
-          <a href="contact.html">Kontakt</a>
-        </nav>
-        <a href="contact.html" class="hire-btn">Meni yollang</a>
-      </div>
-    </header>
-
-    <!-- Main Area -->
-    <main class="main-margin">
-      <!-- Title Section -->
-      <div class="about-title-box">
-        <h1>Men Haqimda</h1>
-        <p class="about-subtitle">
-          Toza va zamonaviy interfeyslar yaratishga ishtiyoqli fidoyi dasturchi
-          Shahnoza bilan tanishing.
-        </p>
-      </div>
-
-      <div class="about-top-grid">
-        <!-- Profile Card -->
-        <div class="hero-block profile-card">
-          <div class="hero-avatar">
-            <img src="https://picsum.photos/140" alt="Shahnoza" />
+    <!-- BUTUN SAHIFA ORAVI -->
+    <div class="aboutButunEkran">
+      <!-- HEADER / NAVBAR -->
+      <header class="aboutNavContainer">
+        <div class="container1">
+          <div class="aboutLinks">
+            <a href="index.html" class="aboutNavLink0">Shahnoza Portfoliosi</a>
+            <nav class="aboutNavLinks">
+              <a href="index.html" class="aboutNavLink1">Asosiy</a>
+              <a href="about.html" class="aboutNavLink2">Men haqimda</a>
+              <a href="contact.html" class="aboutNavLink3">Kontakt</a>
+            </nav>
+            <a href="contact.html" class="aboutHireBtn">Meni yollang</a>
           </div>
-          <div class="hero-content">
-            <h2>Shahnoza</h2>
-            <p class="role-badge">BACKEND DEVELOPER</p>
-            <p class="bio-text">
-              Salom! Men Shahnozaman. Men oddiy, funktsional va vizual jihatdan
-              jozibali veb-tajribalarni yaratishni yoqtiradigan dasturchisiman.
-              Menda yangi texnologiyalarni o'rganish orqali mahoratimni doimiy
-              ravishda takomillashtirishga kuchli ishtiyoq bor.
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main class="aboutMain">
+        <div class="container2">
+          <div class="aboutMainContainer">
+            <!-- 1. BIOGRAPHY SECTION -->
+            <section class="aboutBioSection">
+              <h2 class="aboutSectionTitle">Men haqimda</h2>
+              <p class="aboutBioText">
+                Assalomu alaykum! Men Shahnoza, dasturlash va
+                veb-texnologiyalarga qiziquvchi talabaman. Hozirgi kunda backend
+                va frontend yo‘nalishlarini chuqur o‘rganib, amaliy loyihalar
+                yaratmoqdaman. Maqsadim — foydalanuvchilar uchun qulay, tez
+                ishlaydigan va sifatli veb-ilovalarni yaratish.
+              </p>
+            </section>
+
+            <!-- 2. INTERESTS SECTION -->
+            <section class="aboutInterestsSection">
+              <h3 class="aboutSubTitle">Qiziqishlarim</h3>
+              <div class="aboutInterestsList">
+                <span class="interestBadge">Coding</span>
+                <span class="interestBadge">Musiqa</span>
+                <span class="interestBadge">Sayohat</span>
+                <span class="interestBadge">Kitob o‘qish</span>
+              </div>
+            </section>
+
+            <!-- 3. SKILLS PROGRESS SECTION -->
+            <section class="aboutSkillsSection">
+              <h3 class="aboutSubTitle">Ko‘nikmalar va Darajalar</h3>
+              <div class="skillProgressCard">
+                <div class="skillInfo">
+                  <span>HTML / CSS</span>
+                  <span>90%</span>
+                </div>
+                <div class="progressBar">
+                  <div class="progressFill htmlProgress"></div>
+                </div>
+              </div>
+              <div class="skillProgressCard">
+                <div class="skillInfo">
+                  <span>JavaScript</span>
+                  <span>75%</span>
+                </div>
+                <div class="progressBar">
+                  <div class="progressFill jsProgress"></div>
+                </div>
+              </div>
+              <div class="skillProgressCard">
+                <div class="skillInfo">
+                  <span>Backend (Node.js)</span>
+                  <span>65%</span>
+                </div>
+                <div class="progressBar">
+                  <div class="progressFill backendProgress"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 4. CHARACTER COUNTER SECTION -->
+            <section class="characterCounterSection">
+              <h3 class="aboutSubTitle">Mini Funksiya: Character Counter</h3>
+              <div class="charCounterBox">
+                <textarea
+                  id="charInput"
+                  placeholder="Matn kiriting va belgilar sonini kuzating..."
+                ></textarea>
+                <p class="charCounterResult">
+                  Belgilar soni: <span id="charCount">0</span>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="aboutFooter">
+        <div class="container3">
+          <div class="aboutFooterContent">
+            <div class="aboutFooterTitle">Amethyst Portfolio</div>
+            <p class="aboutFooterCopyright">
+              &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
             </p>
-          </div>
-        </div>
-
-        <div class="interests-card">
-          <h3><span>♥</span> Mening qiziqishlarim</h3>
-          <div class="interests-tags">
-            <span class="tag">Koding</span>
-            <span class="tag">O’qish</span>
-            <span class="tag">Musiqa</span>
-            <span class="tag">Sayohat</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Section: Skills & Counter -->
-      <div class="bottom-blocks">
-        <!-- Texnik Bilimlarim -->
-        <div class="tech-block">
-          <h3><span>&lt;&gt;</span> Texnik Bilimlarim</h3>
-
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>HTML</span>
-              <span>Intermediate (80%)</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 80%"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>CSS</span>
-              <span>Intermediate (75%)</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span>Beginner (60%)</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 60%"></div>
+            <div class="aboutFooterLinks">
+              <a href="#">Maxfiylik siyosati</a>
+              <a href="#">Xizmat ko'rsatish shartlari</a>
             </div>
           </div>
         </div>
-        <!-- Belgilar sanovchi -->
-        <div class="counter-block">
-          <h3>
-            <i class="fa-solid fa-text-height"></i> Mini Funksiya: Belgilar
-            sanovchi
-          </h3>
-          <p class="counter-desc">
-            Belgilar sonining dinamik ravishda yangilanishini ko'rish uchun
-            quyidagi matn maydoniga yozing (UI ko'rinishi).
-          </p>
+      </footer>
+    </div>
 
-          <textarea
-            class="counter-textarea"
-            placeholder="Xabaringizni shu yerga yozing..."
-          ></textarea>
-          <div class="char-count-box">
-            <span class="char-count-label">Belgilar soni:</span>
-            <span class="char-count-num">0</span>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p class="footer-title">Amethyst Portfolio</p>
-        <p class="footer-copy">
-          &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
-        </p>
-        <div class="footer-links">
-          <a href="#">Maxfiylik siyosati</a>
-          <a href="#">Xizmat ko'rsatish shartlari</a>
-        </div>
-      </div>
-    </footer>
-
+    <!-- JavaScript faylini ulash (Character Counter ishlashi uchun) -->
     <script src="script.js"></script>
   </body>
 </html>

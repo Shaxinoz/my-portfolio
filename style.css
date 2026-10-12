@@ -2,627 +2,648 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    sans-serif;
 }
 
 html,
 body {
+  width: 100%;
   min-height: 100vh;
-}
-
-a,
-button {
-  transition: 0.3s ease;
-}
-body {
-  background-color: #fcf8ff;
-  color: #1f2937;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 2. HEADER / NAVBAR  */
-.header,
-.header-top-nav-bar {
-  width: 100%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.top-nav-bar,
-.navbar {
-  width: 100%;
-  max-width: 1280px;
-  height: 63.19px;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #5b21b6;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 32px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #6b7280;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 8px 0;
-  position: relative;
-  transition: color 0.3s ease;
-}
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #5b21b6;
-  border-radius: 2px;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
-}
-
-.hire-btn,
-.btn-primary {
-  background-color: #5b21b6;
-  text-decoration: none;
-  color: #ffffff;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.hire-btn:hover,
-.btn-primary:hover {
-  background-color: #4c1d95;
-}
-
-/* 3. MAIN CONTENT (Har uchala sahifaga moslashtirildi) */
-main,
-.main-margin,
-.main-content,
-.main-content-margin {
-  flex: 1;
-  width: 100%;
-  max-width: 1280px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-/* Page Title & Titles */
-.page-title,
-.about-title-box {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.page-title h1,
-.about-title-box h1 {
-  font-size: 32px;
-  color: #3b0764;
-  font-weight: 700;
-}
-
-.about-subtitle {
-  color: #6b7280;
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-.underline {
-  position: relative;
-  color: #5b21b6;
-  border-bottom: 3px solid #5b21b6;
-  padding-bottom: 2px;
-}
-
-/* Hero Section (Index) */
-.hero-block {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 32px;
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
-}
-
-.hero-avatar img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-}
-
-.hero-content h1,
-.hero-content h2 {
+  height: 1032.17px;
   margin: 0;
-  font-size: 26px;
-  color: #111827;
-}
-
-.hero-title,
-.role-badge {
-  margin: 4px 0 12px 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: #6b21a8;
-}
-
-.hero-description,
-.bio-text {
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #4b5563;
-  line-height: 1.6;
-}
-
-.btn-works {
-  background-color: #6b21a8;
+  padding: 0;
+  background-color: #fcf8ff;
   color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  cursor: pointer;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
 }
 
-/* Grid*/
-.bottom-blocks,
-.about-top-grid,
-.contact-cards-wrapper {
-  display: flex;
-  gap: 24px;
+a {
+  text-decoration: none !important;
+}
+
+/* header  */
+
+.homeButunEkran {
   width: 100%;
-}
-
-.form-card {
-  flex: 1.8;
-}
-.social-card {
-  flex: 1;
-}
-
-/* Karta bloklarining umumiy karkasi */
-.profile-card,
-.card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.profile-card {
-  flex: 2;
-}
-
-/* 1. TEXNIK BILIMLARIM BLOKI */
-.tech-block {
-  flex: 1;
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
-}
-
-.tech-block h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.skill-item {
-  margin-bottom: 16px;
-}
-
-.skill-item:last-child {
-  margin-bottom: 0;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #374151;
-}
-
-.skill-bar {
-  width: 100%;
-  height: 8px;
-  background-color: #f3f4f6;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: #6b21a8;
-  border-radius: 999px;
-}
-
-/* 2. MENING QIZIQISHLARIM BLOKI Figmadan */
-.interests-card {
-  flex: 1;
-  background-color: #f3e8ff;
-  border-radius: 16px;
-  padding: 28px;
-}
-
-.interests-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.interests-card h3 span {
-  color: #6b21a8;
-}
-
-.interests-tags,
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.interests-card .tag,
-.tag {
-  background-color: #e0e7ff;
-  color: #4338ca;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  display: inline-block;
-}
-
-/* Skills & Counter Section */
-.skills-counter-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  max-width: 1160px;
+  /* max-width: 1280px;
+  height: 1058px; */
+  color: #ffffff;
+  background-color: #fcf8ff;
+  overflow-y: auto;
+  position: relative;
   margin: 0 auto;
 }
 
-.skills-card,
-.counter-card {
-  min-height: 252.58px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 32px;
-  box-sizing: border-box;
+
+/* NavBar  */
+.homeNavContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  /* max-width: 1200px; */
+  height: fit-content;
+  min-height: 63.19px;
+  background-color: #ffffff;
+  padding: 16px 20.02px 16px 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  
+}
+/* .homeNavContainer {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  padding: 16px 20.02px 16px 20px;
+} */
+
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 63.19px;
+  max-width: 1200px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 16px 20.02px 16px 20px;
+  margin: 0 auto;
 }
 
-.counter-card {
-  background-color: #f3e8ff;
+
+
+
+.homeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 63.19px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.homeNavLink0 {
+  display: inline-flex;
+  align-items: center;
+  width: 221.19px;
+  height: 31.19px;
+  width: 205px;
+  height: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+  letter-spacing: 0px;
+  color: #4a00e0;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.counter-display-box {
+.homeNavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 287px;
+  height: 22px;
+  gap: 24px;
+}
+
+.homeNavLink1 {
+  display: flex;
+  align-items: center;
+  width: 49px;
+  height: 20px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #4a00e0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #4a00e0 !important;
+  text-decoration: none;
+}
+.homeNavLink2 {
+  display: flex;
+  align-items: center;
+  width: 116px;
+  height: 22px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #4a00e0;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
+  text-decoration: none;
+}
+
+.homeNavLink3 {
+  display: flex;
+  align-items: center;
+  width: 74px;
+  height: 22px;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
+  text-decoration: none;
+}
+.homeHireBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 127px;
+  height: 30px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4a00e0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeHireBtn:hover {
+  background-color: #3b00b3;
+}
+/* Main content  */
+.homeMain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  margin-top: 16px;
-}
+  text-align: center;
 
-.counter-value {
-  font-size: 32px;
-  font-weight: 700;
-  color: #1f2937;
+  width: 100%;
+  /* max-width: 1280px; */
+  height: fit-content;
+  min-height: 748.58px;
+  margin-top: 63.19px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
-.counter-actions {
+.homeMainContainer {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  width: 1200px;
+  max-width: 1200px;
+  height: fit-content;
+  min-height: 748.58px;
+  padding: 48px 20px;
+  gap: 48px;
 }
 
-.counter-btn {
-  background-color: #7c3aed;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 18px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.counter-btn:hover {
-  background-color: #6d28d9;
-}
-
-/* Counter tugmalari joylashuvi va stili */
-.counter-display-box {
-  background-color: #ffffff;
+.homeHeroBlock {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  height: 352px;
   border-radius: 12px;
-  padding: 12px 20px;
+  padding: 48px;
+  gap: 48px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.homeHeroAvatar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 256px;
+  height: 256px;
+  border-radius: 9999px;
+  background-color: #eeecfe;
+  border: 4px solid #e9e6f8;
+  overflow: hidden;
 }
-
-.counter-value {
-  font-size: 20px;
-  font-weight: 700;
-  color: #6b21a8;
+.homeHeroAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.counter-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.counter-btn {
-  background-color: #f3e8ff;
-  color: #6b21a8;
-  border: 1px solid #e9d5ff;
-  border-radius: 8px;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.counter-btn:hover {
-  background-color: #6b21a8;
-  color: #ffffff;
-}
-
-/* Counter & Textarea (Figma dizayniga strictly moslashtirildi) */
-.counter-block {
-  background-color: #f3e8ff;
-  border-radius: 16px;
-  padding: 24px;
-  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03); */
+.homeHeroContent {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 618px;
+  height: 187px;
+  gap: 16px;
+  margin: 0 auto;
 }
 
-.counter-block h3 {
+.homeHeroName {
+  width: 100%;
+  max-width: 618px;
+  height: 39px;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  color: #1a1a27;
+}
+.homeRoleBadge {
+  width: 100%;
+  max-width: 618px;
+  height: 26px;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
-  color: #6b21a8;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  line-height: 25.2px;
+  letter-spacing: 0px;
+  color: #4a00e0;
 }
-
-.counter-desc {
-  color: #6b7280;
-  font-size: 13px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/*(Textarea) */
-.counter-textarea {
-  width: 100%;
-  height: 110px;
-  padding: 14px 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-  background-color: #ffffff;
-  font-size: 14px;
-  color: #374151;
-  resize: none;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.2s ease;
-}
-
-.counter-textarea:focus {
-  border-color: #5b21b6;
-}
-
-.counter-textarea::placeholder {
-  color: #9ca3af;
-}
-
-/* Belgilar soni aks etuvchi pastki quti */
-.char-count-box,
-.counter-box {
-  width: 100%;
-  margin-top: 16px;
-  padding: 14px 16px;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
-.char-count-label {
-  font-size: 14px;
-  color: #4b5563;
-  font-weight: 500;
-}
-
-.char-count-num,
-.counter-number {
-  font-size: 16px;
-  font-weight: 700;
-  color: #6b21a8;
-}
-
-/* Form Styles */
-.form-group {
-  margin-bottom: 16px;
-}
-.form-group label {
-  display: block;
-  font-size: 14px;
-  color: #4b5563;
-  margin-bottom: 6px;
-}
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  outline: none;
-}
-.btn-submit {
-  background-color: #5b21b6;
-  color: white;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* Social Links */
-.social-links {
-  list-style: none;
+.homeBioText {
   display: flex;
   flex-direction: column;
+  width: 618px;
+  height: 48px;
+  max-width: 672px;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #484456;
+}
+.homeWorksBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 162.47px;
+  height: 30px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  background-color: #4a00e0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  border: none;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.homeWorksBtn:hover {
+  background-color: #3b00b3;
+}
+a {
+  text-decoration: none !important;
+}
+
+/* Bottom Two Column  */
+
+.MainTwoColumn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1, 160px;
+  height: 252.58px;
+  gap: 48px;
+}
+.homeSkillsCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 556px;
+  height: 253.39px;
+  padding: 24px 24px 142.39px 24px;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.homeSkillsTitle {
+  width: 100%;
+  max-width: 508px;
+  height: 35px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e3e0f2;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: 0px;
+  color: #1a1a27;
+}
+.homeSkillsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 508px;
+  height: 32px;
+  padding-top: 4px;
   gap: 16px;
 }
-.social-links a {
-  display: flex;
+.homeSkillBadge1 {
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: #4b5563;
-  font-size: 14px;
-}
-.social-links i {
-  color: #6b21a8;
-  font-size: 18px;
-  width: 24px;
-}
-
-/* Info Banner */
-.info-banner {
-  background-color: #f3e8ff;
+  justify-content: center;
+  min-width: 100px;
+  height: 32px;
+  padding: 8px 28.85px 8px 28.84px;
   border-radius: 8px;
-  padding: 16px;
+  background-color: #eeecfe;
+  border: 1px solid #c9c3d9;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
   text-align: center;
 }
-.info-banner p {
-  color: #6b21a8;
-  font-size: 14px;
-}
 
-/* FOOTER */
-footer,
-.footer,
-.footer-container {
-  width: 100%;
-  background-color: #eeecfe;
-  border-top: 1px solid #e8e8f8;
-  padding: 36px 0;
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
+.homeSkillBadge2 {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 32px;
+  padding: 8px 33.45px 8px 33.44px;
+  border-radius: 8px;
+  background-color: #eeecfe;
+  border: 1px solid #c9c3d9;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
+  text-align: center;
+}
+.homeSkillBadge3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #eeecfe;
+  border: 1px solid #c9c3d9;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #484456;
+  text-align: center;
 }
 
-.footer-content {
+.homeCounterCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 556px;
+  height: 254px;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+.homeCounterTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 508px;
+  height: 35px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e3e0f2;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: 0px;
+  color: #1a1a27;
+  margin: 0;
+}
+
+.homeCounterBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 508px;
+  height: 151px;
+  margin-top: 4px;
+  padding: 24px;
+  gap: 24px;
+  border-radius: 8px;
+  background-color: #eeecfe;
+}
+
+.homeCounterValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: -0.64px;
+  color: #1a1a27;
+  text-align: center;
+}
+
+.homeCounterBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 208px;
+  height: 40px;
+  gap: 16px;
+}
+.homeCounterBtnMinus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4a00e0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.homeCounterBtnReset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 101px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background-color: #4a00e0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.homeCounterBtnPlus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4a00e0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.homeFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  /* max-width: 1280px;
+  height: 196px; */
+  padding-top: 46px;
+  padding-bottom: 48px;
+  background-color: #e9e6f8;
+  margin: 0 auto;
+}
+
+/* .homeFooter {
+  width: 100%;
+  background-color: #e9e6f8;
+  padding: 46px 0 48px 0;
+} */
+
+.homeFooterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 1280px;
-  padding: 0 40px;
+  height: 102px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 16px;
+}
+
+.homeFooterTitle {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
   align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  color: #1a1a27;
+  text-align: center;
+}
+.homeFooterCopyright {
+  width: 374px;
+  height: 24px;
+  width: 100%;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #484456;
   text-align: center;
 }
 
-.footer-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #4c1d95;
-}
-.footer-copy,
-.footer-copyright {
-  font-size: 14px;
-  color: #6b7280;
-}
-.footer-links {
+.homeFooterLinks {
   display: flex;
+  flex-direction: row;
+  width: 330px;
+  height: 24px;
   gap: 16px;
-  margin-top: 4px;
 }
-.footer-links a {
-  font-size: 13px;
-  color: #6b7280;
+
+.homeFooterLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #5d6478;
   text-decoration: none;
-}
-.footer-links a:hover {
-  color: #551fff;
-  text-decoration: underline;
+  text-align: center;
 }
 
-/*RESPONSIVE*/
-@media (max-width: 768px) {
-  .hero-block,
-  .bottom-blocks,
-  .about-top-grid,
-  .contact-cards-wrapper {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    display: none;
-  }
-}
-
-@view-transition {
-  navigation: auto;
+.homeFooterLinks a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 189px;
+  height: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #5d6478;
+  text-decoration: none;
+  text-align: center;
 }

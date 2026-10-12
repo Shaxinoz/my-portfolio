@@ -3,82 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Asosiy - Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Shahnoza Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="top-nav-bar">
-        <a href="index.html" class="logo">Shahnoza Portfoliosi</a>
-        <nav class="nav-links">
-          <a href="index.html" class="active">Asosiy</a>
-          <a href="about.html">Men haqimda</a>
-          <a href="contact.html">Kontakt</a>
+<body>
+    <!-- HEADER / NAVBAR -->
+     
+    <div class="homeButunEkran">
+        <header class="homeNavContainer">
+            <div class="container1">
+      <div class="homeLinks">
+        <a href="index.html" class="homeNavLink0">Shahnoza Portfoliosi</a>
+        <nav class="homeNavLinks">
+          <a href="index.html" class="homeNavLink1">Asosiy</a>
+          <a href="about.html" class="homeNavLink2">Men haqimda</a>
+          <a href="contact.html" class="homeNavLink3">Kontakt</a>
         </nav>
-        <a href="contact.html" class="hire-btn">Meni yollang</a>
-      </div>
-    </header>
-
-    <main class="main-margin">
-      <section class="hero-block">
-        <div class="hero-avatar">
-          <img src="https://picsum.photos/150" alt="Shahnoza rasmi" />
+        <a href="contact.html" class="homeHireBtn">Meni yollang</a>
         </div>
-        <div class="hero-content">
-          <h1>Shahnoza</h1>
-          <p class="hero-title">Backend Developer</p>
-          <p class="hero-description">
-            Men oddiy va foydali veb saytlar yaratishni yoqtiraman. Yangi
-            narsalarni o'rganishga qiziqaman va amaliyot qilish orqali o'saman.
-          </p>
-          <button class="btn-works">Mening ishlarim</button>
         </div>
-      </section>
+      </header>
 
-      <!-- Pastki bloklar -->
-      <div class="bottom-blocks">
-        <!-- Texnologiyalar qismi -->
-        <section class="tech-block">
-          <h3>Men biladigan texnologiyalar</h3>
-          <div class="tech-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+      <!-- MAIN CONTENT --> 
+      <main class="homeMain">
+        <div class="container2">
+        <div class="homeMainContainer">
+       
+       
+            <!-- HeroSection -->
+            <section class="homeHeroBlock">
+          <div class="homeHeroAvatar">
+            <img src="image.png" alt="Shahnoza" />
+          </div>
+          <div class="homeHeroContent">
+            <h1 class="homeHeroName">Shahnoza</h1>
+            <p class="homeRoleBadge">Backend Developer</p>
+            <p class="homeBioText">
+              Men oddiy va foydali veb saytlar yaratishni yoqtiraman. Yangi
+              narsalarni o'rganishga qiziqaman va amaliyot qilish orqali
+              o'saman!
+            </p>
+            <button class="homeWorksBtn">Mening ishlarim</button>
           </div>
         </section>
 
-        <!-- Mini sanagich qismi -->
-        <section class="counter-block">
-          <h3>Mini Funksiya: Counter</h3>
-          <div class="counter-display-box">
-            <span class="counter-number">12</span>
-            <div class="counter-buttons">
-              <button class="counter-btn" id="decrement">-</button>
-              <button class="counter-btn" id="reset">Qaytarish</button>
-              <button class="counter-btn" id="increment">+</button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+        <!-- Bottom Two Column -->
+         <div class="MainTwoColumn">
+  
+  <!-- 1. Men biladigan texnologiyalar -->
+  <section class="homeSkillsCard">
+    <h3 class="homeSkillsTitle">Men biladigan texnologiyalar</h3>
+    <div class="homeSkillsList">
+      <span class="homeSkillBadge1">HTML</span>
+      <span class="homeSkillBadge2">CSS</span>
+      <span class="homeSkillBadge3">JavaScript</span>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <p class="footer-title">Amethyst Portfolio</p>
-        <p class="footer-copy">
-          &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
-        </p>
-        <div class="footer-links">
-          <a href="#">Maxfiylik siyosati</a>
-          <a href="#">Xizmat ko'rsatish shartlari</a>
-        </div>
-      </div>
-    </footer>
+  <!-- 2. Mini Funksiya -->
 
-    <script src="script.js"></script>
+  <section class="homeCounterCard">
+  <h3 class="homeCounterTitle">Mini Funksiya: Counter</h3>
+  
+  <div class="homeCounterBox">
+    <span class="homeCounterValue">12</span>
+    
+    <div class="homeCounterBtns">
+      <button class="homeCounterBtnMinus">-</button>
+      <button class="homeCounterBtnReset">Qaytarish</button>
+      <button class="homeCounterBtnPlus">+</button>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+</main>
+
+
+      <!-- FOOTER -->
+      <footer class="homeFooter">
+        <div class="container3">
+  <div class="homeFooterContent">
+    <div class="homeFooterTitle">Amethyst Portfolio</div>
+    <p class="homeFooterCopyright">© 2026 Portfolio. Barcha huquqlar himoyalangan.</p>
+    <div class="homeFooterLinks">
+      <a href="#">Maxfiylik siyosati</a>
+      <a href="#">Xizmat ko'rsatish shartlari</a>
+    </div>
+  </div>
+  </div>
+</footer>
+   
+   </div>
   </body>
 </html>
