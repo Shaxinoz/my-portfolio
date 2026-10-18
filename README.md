@@ -2,13 +2,7 @@
 
 Backend Developer shaxsiy portfolio veb-sayti. Ushbu loyiha zamonaviy va sodda dizayn asosida yaratilgan bo'lib, ishlab chiquvchi haqida ma'lumotlar, biladigan texnologiyalari hamda interaktiv funksiyalarni o'z ichiga oladi.
 
-## Loyiha ko'rinishlari (Screenshots)
 
-| Mobile Versiya 1 | Mobile Versiya 2 | Mobile Versiya 3 |
-| :---: | :---: | :---: |
-| ![Preview 1](preview.png) | ![Preview 2](preview.png) | ![Preview 3](preview-3.png) |
-
----
 
 ## 🚀 Texnologiyalar (Tech Stack)
 

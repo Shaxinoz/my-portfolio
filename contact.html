@@ -3,120 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio - Kontakt</title>
+    <title>Alisher Portfoliosi - Kontakt</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="top-nav-bar">
-        <a href="index.html" class="logo">Shahnoza Portfoliosi</a>
-        <nav class="nav-links">
-          <a href="index.html">Asosiy</a>
-          <a href="about.html">Men haqimda</a>
-          <a href="contact.html" class="active">Kontakt</a>
-        </nav>
-        <a href="contact.html" class="hire-btn">Meni yollang</a>
-      </div>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main class="main-content-margin">
-      <!-- Page Title -->
-      <div class="page-title">
-        <h1>Men <span class="underline">bilan bog'laning</span></h1>
-      </div>
-
-      <div class="contact-cards-wrapper">
-        <div class="card form-card">
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Ism</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="Ismingizni kiriting"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email manzilingizni kiriting"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Xabar</label>
-              <textarea
-                id="message"
-                rows="4"
-                placeholder="Xabaringizni yozing..."
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Yuborish</button>
-          </form>
+    <!-- HEADER / NAVBAR -->
+    <div class="kontaktButunEkran">
+      <header class="header">
+        
+        <div class="navContainer">
+          <div class="logo">Shahnoza Portfoliosi</div>
+          <nav class="navLinks">
+            <a href="index.html" class="KontaktNavLink1">Asosiy</a>
+            <a href="about.html" class="KontaktNavLink2">Men haqimda</a>
+            <a href="contact.html" class="KontaktNavLink3">Kontakt</a>
+          </nav>
+          <a href="contact.html" class="KontaktNavBtn">Meni yollang</a>
         </div>
+      </header>
 
-        <!-- O'ng tomondagi Ijtimoiy Tarmoqlar -->
-        <div class="card social-card">
-          <h3>Ijtimoiy tarmoqlar</h3>
-          <ul class="social-links">
-            <br />
-            <li>
-              <a
-                href="https://instagram.com/shahnozaisha"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link"
-                ><i class="fa-brands fa-instagram"></i> Instagram</a
-              >
-            </li>
-            <li>
-              <a href="https://t.me/@Noza_1233" target="_blank"
-                ><i class="fa-brands fa-telegram"></i> Telegram</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            </li>
-          </ul>
+      <!-- KONTAKT MAIN QISMI -->
+      <main class="kontaktMain">
+        <div class="kontaktContainer">
+          <!-- Sarlavha qismi -->
+
+          <div class="kontaktTitleWrapper">
+            <h1 class="kontaktTitle">
+              Men bilan bog'laning
+              <span class="kontaktTitleLine"></span>
+            </h1>
+          </div>
+
+          <div class="kontaktBody">
+            <!-- Chap tomon: Xabar yuborish formasi -->
+            <form class="kontaktForm">
+              <!-- Form deb nomlangan asosiy o'rovchi (Figma bo'yicha) -->
+              <div class="kontaktFormInner">
+                <!-- Ism maydoni uchun konteyner -->
+                <div class="kontaktInputGroup">
+                  <label for="name" class="kontaktLabel">Ism</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="kontaktInput"
+                    placeholder="Ismingizni kiriting"
+                  />
+                </div>
+
+                <!-- Email maydoni uchun konteyner -->
+                <div class="kontaktInputGroup">
+                  <label for="email" class="kontaktLabel">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="kontaktInput"
+                    placeholder="Email manzilingizni kiriting"
+                  />
+                </div>
+
+                <!-- Xabar maydoni uchun konteyner -->
+                <div class="kontaktMessageGroup">
+                  <label for="message" class="kontaktLabel">Xabar</label>
+                  <textarea
+                    id="message"
+                    class="kontaktTextarea"
+                    placeholder="Xabaringizni yozing..."
+                  ></textarea>
+                </div>
+
+                <!-- Yuborish tugmasi  -->
+                <button type="submit" class="kontaktButton">Yuborish</button>
+              </div>
+            </form>
+
+            <div class="kontaktSocialBox">
+              <h3 class="kontaktSocialHeading">Ijtimoiy tarmoqlar</h3>
+
+              <ul class="kontaktSocialGap">
+                <!-- 1. Instagram -->
+                <li class="kontaktSocialItem">
+                  <a href="#" class="kontaktSocialLink">
+                    <svg
+                      class="kontaktIcon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      />
+                    </svg>
+                    <span class="kontaktSocialInsta">Instagram</span>
+                  </a>
+                </li>
+
+                <!-- 2. Telegram -->
+                <li class="kontaktSocialItem">
+                  <a href="#" class="kontaktSocialLink">
+                    <svg
+                      class="kontaktIconTg"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.5 2L2 9.5l6 2.5 2 7 3.5-4.5L19 19.5 21.5 2zM9.5 12l8-5.5-6.5 7.5v3l-2-3.5L9.5 12z"
+                        fill="none"
+                        stroke="#4A00E0"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="kontaktSocialTg">Telegram</span>
+                  </a>
+                </li>
+
+                <!-- 3. YouTube -->
+                <li class="kontaktSocialItem">
+                  <a href="#" class="kontaktSocialLink">
+                    <svg
+                      class="kontaktIconYT"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                        fill="none"
+                        stroke="#4A00E0"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <polygon
+                        points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                        fill="#4A00E0"
+                      />
+                    </svg>
+                    <span class="kontaktSocialYT">YouTube</span>
+                  </a>
+                </li>
+
+                <!-- 4. LinkedIn -->
+                <li class="kontaktSocialItem">
+                  <a href="#" class="kontaktSocialLink">
+                    <svg
+                      class="kontaktIconLI"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="2"
+                        y="7"
+                        width="20"
+                        height="14"
+                        rx="2"
+                        ry="2"
+                        fill="none"
+                        stroke="#4A00E0"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                        fill="none"
+                        stroke="#4A00E0"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="kontaktSocialLI">LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pastki banner / qo'shimcha yozuv -->
+          <div class="kontaktBannerCover">
+            <div class="kontaktBanner">
+              <p class="kontaktBannerText">
+                Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol
+                bog'lanishingiz mumkin!
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
 
-      <!-- Bottom -->
-      <div class="info-banner">
-        <p>
-          Savollaringiz yoki takliflaringiz bo'lsa, men bilan bemalol
-          bog'lanishingiz mumkin!
-        </p>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <p class="footer-title">Amethyst Portfolio</p>
-        <p class="footer-copy">
-          &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
-        </p>
-        <div class="footer-links">
-          <a href="#">Maxfiylik siyosati</a>
-          <a href="#">Xizmat ko'rsatish shartlari</a>
+      <!-- FOOTER -->
+      <footer class="kontaktFooter">
+        <div class="kontaktFooterContent">
+          <div class="kontaktFooterTitle">Amethyst Portfolio</div>
+          <div class="kontaktFooterCopyright">
+            &copy; 2026 Portfolio. Barcha huquqlar himoyalangan.
+          </div>
+          <div class="kontaktFooterLinks">
+            <a href="#">Maxfiylik siyosati</a>
+            <a href="#">Xizmat ko'rsatish shartlari</a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

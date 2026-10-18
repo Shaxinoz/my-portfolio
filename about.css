@@ -5,7 +5,7 @@
 }
 
 /* Html -> Body (Figma parametrlariga mos) */
-html,
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -18,9 +18,6 @@ body {
   overflow-y: auto;
   position: relative;
 }
-a {
-  text-decoration: none !important;
-}
 
 .aboutButunEkran {
   width: 100%;
@@ -31,33 +28,36 @@ a {
   overflow-y: auto;
   position: relative;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* NavBar  */
 .aboutNavContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  /* width: 100%; */
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  /* max-width: 1200px; */
   height: fit-content;
-  height: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  height: 63.19px;
   background-color: #ffffff;
+  padding: 16px 20.02px 16px 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
-.container1 {
-  display: flex;
+
+.aboutContainer {
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 63.19px;
   max-width: 1200px;
-  justify-content: space-between;
   background-color: #ffffff;
   padding: 16px 20.02px 16px 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
-  /* outline: 2px solid #00ff00; */
 }
 
 .aboutLinks {
@@ -66,12 +66,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
-  min-height: 63.19px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  width: 287px;
+  height: 22px;
 }
 
 .aboutNavLink0 {
@@ -95,8 +91,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  max-width: 287px;
+  width: 287px;
   height: 22px;
   gap: 24px;
 }
@@ -107,14 +102,14 @@ a {
   width: 49px;
   height: 20px;
   padding-bottom: 4px;
-  border-bottom: 2px solid #4a00e0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.7px;
-  color: #4a00e0 !important;
+  color: #484456;
   text-decoration: none;
+  background: #ffffff;
 }
 
 .aboutNavLink2 {
@@ -122,16 +117,15 @@ a {
   align-items: center;
   width: 116px;
   height: 22px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   padding: 4px 8px;
   color: #4a00e0;
-  text-decoration: none;
+  border-bottom: 2px solid #4a00e0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.7px;
-  color: #484456;
   text-decoration: none;
 }
 
@@ -159,10 +153,9 @@ a {
   width: 127px;
   height: 30px;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 9999px;
   background-color: #4a00e0;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -176,42 +169,37 @@ a {
   background-color: #3b00b3;
 }
 
-/* Main Content.  */
+/* 1.... MAIN CONTENT   */
 
 .abouMain {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  min-height: 805.55px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.aboutMainContainer {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, auto);
   width: 100%;
   max-width: 1200px;
   height: auto;
-  min-height: 805.55px;
-  row-gap: 24px;
-  column-gap: 24px;
+  gap: 24px;
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.aboutMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  height: 805.55px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .aboutBioSection {
   width: 1160px;
   height: 83.59px;
   position: relative;
   top: 48px;
-  left: 20px;
   padding-bottom: 8px;
-  transform: rotate(0deg);
-  opacity: 1;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column: span 12;
@@ -256,26 +244,32 @@ a {
   padding-bottom: 0.69px;
   white-space: nowrap;
 }
-.aboutProfileSection {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  width: 100%;
+
+.MainTwoColumn1 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
   position: relative;
+  width: 100%;
+  width: 1160px;
+  height: auto;
+  gap: 28px;
+  top: 83.98px;
 }
 
 .profileCard {
   width: 765.33px;
   height: 245.19px;
-  position: relative;
-  top: auto;
-  left: 20px;
   display: flex;
+  position: relative;
+  box-sizing: border-box;
+  top: auto;
   gap: 24px;
   transform: rotate(0deg);
   opacity: 1;
   border-radius: 12px;
   padding: 24px;
-  box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #e9e6f8;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -356,16 +350,16 @@ a {
   margin: 0;
 }
 
-/* Interests section  */
+/* 2.....INTERESTS SECTION */
 
 .aboutInterestsSection {
+  width: 100%;
   width: 370.67px;
   height: 245.19px;
-  transform: rotate(0deg);
-  opacity: 1;
-  top: 183.98px;
-  left: 809.33px;
   display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
   flex-direction: column;
   gap: 15.69px;
   border-radius: 12px;
@@ -377,7 +371,6 @@ a {
   grid-row-end: span 1;
   grid-column-start: 9;
   grid-column-end: span 4;
-  outline: 2px solid #ff4d4d;
 }
 .aboutSubTitle {
   display: flex;
@@ -485,7 +478,20 @@ a {
   white-space: nowrap;
 }
 
-/* 3. SKILLS PROGRESS SECTION  */
+/* 3..... SKILLS PROGRESS SECTION  */
+
+.MainTwoColumn2 {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  width: 1160px;
+  height: auto;
+  gap: 28px;
+  margin-top: 99px;
+}
 
 .aboutSkillsSection {
   width: 568px;
@@ -543,7 +549,6 @@ a {
   box-sizing: border-box;
 }
 
-/* HTMl, css, javascript 3tasiga bir hil conteynerga olcham  */
 .skillInfo {
   width: 518px;
   width: 100%;
@@ -593,7 +598,6 @@ a {
   overflow: hidden;
 }
 
-/* 1  */
 .progressFill.htmlProgress {
   width: 414.39px;
   height: 10px;
@@ -603,7 +607,6 @@ a {
   background: #4a00e0;
   box-sizing: border-box;
 }
-/* 2  */
 
 .progressFill.jsProgress {
   width: 388.5px;
@@ -615,8 +618,6 @@ a {
   box-sizing: border-box;
 }
 
-/* 3  */
-
 .progressFill.backendProgress {
   width: 310.8px;
   height: 10px;
@@ -626,6 +627,8 @@ a {
   background: #4a00e0;
   box-sizing: border-box;
 }
+
+/* 4..... CHARACTER COUNTER SECTION  */
 
 .counter-card {
   width: 568px;
@@ -643,22 +646,10 @@ a {
   background: #eeecfe;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
-
   grid-row: 3 / span 1;
   grid-column: 7 / span 6;
 }
 
-.counter-blob {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  border-radius: 9999px;
-  opacity: 0.5;
-  background: #e6deff;
-  filter: blur(64px);
-  pointer-events: none;
-  z-index: 0;
-}
 .counter-header {
   width: 518px;
   height: 26px;
@@ -924,4 +915,16 @@ a {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 0.4s ease-in-out;
 }
