@@ -9,26 +9,23 @@
 body {
   width: 100%;
   min-height: 100vh;
-  height: 1032.17px;
+  /* height: 1032.17px; */
   margin: 0;
   padding: 0;
   background-color: #fcf8ff;
   color: #ffffff;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
 
 .aboutButunEkran {
   width: 100%;
-  /* max-width: 1280px;
-  min-height: 1114.73px; */
   background-color: #fcf8ff;
   color: #ffffff;
   overflow-y: auto;
-  position: relative;
-  margin: 0 auto;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* NavBar  */
@@ -38,69 +35,61 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  /* max-width: 1200px; */
   height: fit-content;
-  height: 63.19px;
   background-color: #ffffff;
-  padding: 16px 20.02px 16px 20px;
+  padding: 12px 16px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .aboutContainer {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 12px;
   width: 100%;
-  height: 63.19px;
   max-width: 1200px;
   background-color: #ffffff;
-  padding: 16px 20.02px 16px 20px;
+  padding: 12px 16px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
 }
 
 .aboutLinks {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  width: 287px;
-  height: 22px;
+  max-width: 100%;
+  gap: 12px;
+  height: auto;
 }
 
 .aboutNavLink0 {
-  display: inline-flex;
-  align-items: center;
-  width: 221.19px;
-  height: 31.19px;
-  width: 205px;
-  height: 32px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 31.2px;
+  font-size: 22px;
+  line-height: 28px;
   letter-spacing: 0px;
   color: #4a00e0;
   text-decoration: none;
   white-space: nowrap;
 }
 
+/* Nav havolalari uchun guruh */
 .aboutNavLinks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 287px;
-  height: 22px;
-  gap: 24px;
+  gap: 16px;
 }
 
 .aboutNavLink1 {
-  display: flex;
-  align-items: center;
-  width: 49px;
-  height: 20px;
   padding-bottom: 4px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
@@ -113,11 +102,6 @@ body {
 }
 
 .aboutNavLink2 {
-  display: flex;
-  align-items: center;
-  width: 116px;
-  height: 22px;
-  /* border-radius: 4px; */
   padding: 4px 8px;
   color: #4a00e0;
   border-bottom: 2px solid #4a00e0;
@@ -130,13 +114,8 @@ body {
 }
 
 .aboutNavLink3 {
-  display: flex;
-  align-items: center;
-  width: 74px;
-  height: 22px;
   padding: 4px 8px;
   border-radius: 4px;
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -150,8 +129,9 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 127px;
-  height: 30px;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
   padding: 8px 16px;
   border-radius: 9999px;
   background-color: #4a00e0;
@@ -160,7 +140,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
-  letter-spacing: 0.7px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -173,30 +152,26 @@ body {
 
 .abouMain {
   width: 100%;
-  max-width: 1200px;
+  max-width: auto;
   height: auto;
-  gap: 24px;
   margin: 0 auto;
   box-sizing: border-box;
+  flex: 1;
 }
 
 .aboutMainContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   width: 100%;
   max-width: 1200px;
-  height: 805.55px;
-  padding-left: 40px;
-  padding-right: 40px;
+  min-height: 805.55px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .aboutBioSection {
-  width: 1160px;
-  height: 83.59px;
   position: relative;
   top: 48px;
   padding-bottom: 8px;
@@ -207,8 +182,8 @@ body {
 }
 
 .aboutSectionTitle {
-  width: 1160px;
-  height: 39px;
+  height: auto;
+  margin-bottom: 8px;
   transform: rotate(0deg);
   opacity: 1;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -223,11 +198,12 @@ body {
 }
 
 .aboutBioText1 {
-  width: 1160px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6.9px;
   transform: rotate(0deg);
   opacity: 1;
@@ -237,31 +213,32 @@ body {
   font-size: 18px;
   line-height: 28.8px;
   letter-spacing: 0px;
-  display: flex;
-  align-items: center;
   color: #484456;
   max-width: 672px;
   padding-bottom: 0.69px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .MainTwoColumn1 {
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-direction: column;
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  width: 1160px;
+  max-width: 1160px;
   height: auto;
   gap: 28px;
-  top: 83.98px;
+  top: 48px;
 }
 
 .profileCard {
-  width: 765.33px;
-  height: 245.19px;
+  width: 100%;
+  max-width: 765.33px;
+  height: auto;
+  min-height: 245.19px;
   display: flex;
+  flex-direction: column;
   position: relative;
   box-sizing: border-box;
   top: auto;
@@ -296,8 +273,9 @@ body {
 }
 
 .profileContent {
-  width: 531.33px;
-  height: 195.19px;
+  width: 100%;
+  max-width: 531.33px;
+  height: auto;
   display: flex;
   flex-direction: column;
   transform: rotate(0deg);
@@ -305,8 +283,9 @@ body {
 }
 
 .profileName {
-  width: 531.33px;
-  height: 32px;
+  width: 100%;
+  max-width: 531.33px;
+  height: auto;
   position: relative;
   top: -1px;
   transform: rotate(0deg);
@@ -319,7 +298,8 @@ body {
 }
 
 .profileRole {
-  width: 174.53px;
+  width: 100%;
+  max-width: 174.53px;
   height: 14px;
   transform: rotate(0deg);
   opacity: 1;
@@ -332,9 +312,11 @@ body {
   text-transform: uppercase;
   color: #575e72;
 }
+
 .profileBio {
-  width: 531.33px;
-  height: 156px;
+  width: 100%;
+  max-width: 531.33px;
+  height: auto;
   position: relative;
   top: auto;
   transform: rotate(0deg);
@@ -354,8 +336,9 @@ body {
 
 .aboutInterestsSection {
   width: 100%;
-  width: 370.67px;
-  height: 245.19px;
+  max-width: 370.67px;
+  min-height: 245.19px;
+  height: auto;
   display: flex;
   position: relative;
   box-sizing: border-box;
@@ -364,7 +347,7 @@ body {
   gap: 15.69px;
   border-radius: 12px;
   border: 1px solid #e3e0f2;
-  padding: 23.5px 24px 110px 24px;
+  padding: 23.5px 24px 24px 24px;
   background: #f5f2ff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
   grid-row-start: 2;
@@ -372,13 +355,14 @@ body {
   grid-column-start: 9;
   grid-column-end: span 4;
 }
+
 .aboutSubTitle {
   display: flex;
   align-items: center;
   gap: 7.99px;
   width: 100%;
   max-width: 320.67px;
-  height: 26px;
+  height: auto;
   opacity: 1;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
@@ -389,20 +373,25 @@ body {
   color: #1a1a27;
   margin: 0;
 }
+
 .aboutInterestsList {
-  width: 320.67px;
-  height: 68px;
+  width: 100%;
+  max-width: 320.67px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   opacity: 1;
 }
 
-.interestBadge1 {
+.interestBadge1,
+.interestBadge2,
+.interestBadge3,
+.interestBadge4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 86px;
+  width: auto;
   height: 30px;
   padding: 8px 16px;
   background-color: #dbe2fa;
@@ -416,96 +405,34 @@ body {
   white-space: nowrap;
 }
 
-.interestBadge2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 81px;
-  height: 30px;
-  padding: 8px 16px;
-  background: #dbe2fa;
-  border-radius: 9999px;
-  opacity: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #5d6478;
-  white-space: nowrap;
-}
-.interestBadge3 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(0deg);
-  opacity: 1;
-  width: 85px;
-  height: 30px;
-  padding: 8px 16px;
-  background: #dbe2fa;
-  border-radius: 9999px;
-  opacity: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #5d6478;
-  white-space: nowrap;
-}
-
-.interestBadge4 {
-  width: 132px;
-  height: 30px;
-  transform: rotate(0deg);
-  opacity: 1;
-  top: 38px;
-  border-radius: 9999px;
-  padding: 8px 16px;
-  background: #dbe2fa;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #5d6478;
-  white-space: nowrap;
-}
-
 /* 3..... SKILLS PROGRESS SECTION  */
 
 .MainTwoColumn2 {
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-direction: column;
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  width: 1160px;
+  max-width: 1160px;
   height: auto;
   gap: 28px;
-  margin-top: 99px;
+  margin-top: 40px;
 }
 
 .aboutSkillsSection {
-  width: 568px;
-  height: 304.38px;
+  width: 100%;
+  max-width: 568px;
+  min-height: 304.38px;
+  height: auto;
   transform: rotate(0deg);
   opacity: 1;
-  top: 453.17px;
-  left: 20px;
   display: flex;
   flex-direction: column;
   gap: 23.69px;
   border-radius: 12px;
   border: 1px solid #e9e6f8;
-  padding: 23.5px 24px 101.19px 24px;
+  padding: 23.5px 24px 24px 24px;
   background: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 
@@ -516,23 +443,6 @@ body {
   margin-left: 0;
 }
 
-.aboutSubTitle {
-  width: 518px;
-  height: 26px;
-  transform: rotate(0deg);
-  opacity: 1;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 25.2px;
-  letter-spacing: 0px;
-  color: #1a1a27;
-  margin: 0;
-}
 .codeIcon {
   width: 20px;
   height: 12px;
@@ -540,8 +450,9 @@ body {
 }
 
 .skillProgressCard {
-  width: 518px;
-  height: 32px;
+  width: 100%;
+  max-width: 518px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -550,8 +461,8 @@ body {
 }
 
 .skillInfo {
-  width: 518px;
   width: 100%;
+  max-width: 518px;
   height: 14px;
   display: flex;
   justify-content: space-between;
@@ -559,38 +470,19 @@ body {
   box-sizing: border-box;
 }
 
-.skillInfo span:first-child {
-  width: 40.77px;
+.skillInfo span:first-child,
+.skillInfo span:last-child {
+  width: auto;
   height: 14px;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 14px;
-  line-height: 14px;
   letter-spacing: 0.7px;
-  color: #1a1a27;
-  display: flex;
-  align-items: center;
   white-space: nowrap;
 }
 
-.skillInfo span:last-child {
-  width: 145.56px;
-  height: 14px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #575e72;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  white-space: nowrap;
-}
 .progressBar {
-  width: 518px;
+  width: 100%;
+  max-width: 518px;
   height: 10px;
   border-radius: 9999px;
   background: #e3e0f2;
@@ -599,44 +491,37 @@ body {
 }
 
 .progressFill.htmlProgress {
-  width: 414.39px;
+  width: 80%;
+  max-width: 414.39px;
   height: 10px;
-  transform: rotate(0deg);
-  opacity: 1;
   border-radius: 9999px;
   background: #4a00e0;
-  box-sizing: border-box;
 }
 
 .progressFill.jsProgress {
-  width: 388.5px;
+  width: 75%;
+  max-width: 388.5px;
   height: 10px;
-  transform: rotate(0deg);
-  opacity: 1;
   border-radius: 9999px;
   background: #4a00e0;
-  box-sizing: border-box;
 }
 
 .progressFill.backendProgress {
-  width: 310.8px;
+  width: 60%;
+  max-width: 310.8px;
   height: 10px;
-  transform: rotate(0deg);
-  opacity: 1;
   border-radius: 9999px;
   background: #4a00e0;
-  box-sizing: border-box;
 }
 
 /* 4..... CHARACTER COUNTER SECTION  */
 
 .counter-card {
-  width: 568px;
-  height: 305.7px;
+  width: 100%;
+  max-width: 568px;
+  height: auto;
   transform: rotate(0deg);
   opacity: 1;
-  top: 453.17px;
-  left: 612px;
   display: flex;
   flex-direction: column;
   gap: 3.7px;
@@ -651,65 +536,55 @@ body {
 }
 
 .counter-header {
-  width: 518px;
-  height: 26px;
+  width: 100%;
+  max-width: 518px;
+  height: auto;
   display: flex;
   align-items: center;
   gap: 8px;
-  transform: rotate(0deg);
-  opacity: 1;
   box-sizing: border-box;
 }
+
 .counter-icon {
   width: 20px;
   height: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(0deg);
-  opacity: 1;
   color: #4700d7;
   box-sizing: border-box;
 }
 
 .counter-title {
   width: auto;
-  height: 26px;
-  transform: rotate(0deg);
-  opacity: 1;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
-  font-style: normal;
   font-size: 18px;
   line-height: 25.2px;
-  letter-spacing: 0px;
   color: #4700d7;
   display: flex;
   align-items: center;
   margin: 0;
-  box-sizing: border-box;
   white-space: nowrap;
 }
+
 .counter-desc {
-  width: 518px;
-  height: 40px;
-  transform: rotate(0deg);
-  opacity: 1;
+  width: 100%;
+  max-width: 518px;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #484456;
   margin: 0;
   box-sizing: border-box;
 }
+
 .counter-body {
-  width: 518px;
-  height: 182.3px;
-  transform: rotate(0deg);
-  opacity: 1;
+  width: 100%;
+  max-width: 518px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -718,29 +593,20 @@ body {
 }
 
 .counter-textarea {
-  width: 518px;
+  width: 100%;
+  max-width: 518px;
   height: 114px;
-  transform: rotate(0deg);
-  opacity: 1;
   border-radius: 8px;
   border: 1px solid #797488;
   padding: 8px 8px 80px 8px;
   background: #ffffff;
   box-shadow: inset 0px 2px 4px 1px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
-
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #48445699;
   resize: none;
-}
-
-.counter-textarea::placeholder {
-  color: #48445699;
 }
 
 .counter-textarea:focus {
@@ -749,11 +615,9 @@ body {
 }
 
 .counter-result-box {
-  width: 518px;
-  height: 44px;
-  transform: rotate(0deg);
-  opacity: 1;
-  padding-top: 4px;
+  width: 100%;
+  max-width: 518px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -764,43 +628,30 @@ body {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
+
 .counter-label {
-  width: 96px;
-  height: 24px;
-  transform: rotate(0deg);
-  opacity: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  width: auto;
+  max-width: 96px;
+  height: auto;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #484456;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .counter-number {
-  width: 12.89px;
-  height: 26px;
-  transform: rotate(0deg);
-  opacity: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  width: auto;
+  min-width: 12.89px;
+  height: auto;
   font-size: 18px;
-  line-height: 25.2px;
-  letter-spacing: 0px;
   color: #4a00e0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
 
-/* FOOTER  */
-
+/* FOOTER */
 .aboutFooter {
   display: flex;
   flex-direction: column;
@@ -808,35 +659,36 @@ body {
   justify-content: center;
   text-align: center;
   width: 100%;
-  /* max-width: 1280px; */
-  height: 196px;
+  height: auto;
   background-color: #e9e6f8;
   margin: 0 auto;
-  padding: 46px 20 48px 20;
+  padding: 30px 20px;
   box-sizing: border-box;
 }
+
 .aboutFooterContent {
-  width: 1280px;
-  height: 190px;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
   transform: rotate(0deg);
   opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 48px 20px 48px 20px;
+  padding: 20px 0;
   background: #e9e6f8;
   box-sizing: border-box;
 }
 
 .aboutFooterTitle {
-  width: 143.22px;
-  height: 14px;
+  width: auto;
+  max-width: 143.22px;
+  height: auto;
   transform: rotate(0deg);
   opacity: 1;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.7px;
@@ -845,77 +697,51 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
 
 .aboutFooterCopyright {
-  width: 374px;
-  height: 24px;
-  transform: rotate(0deg);
-  opacity: 1;
+  width: 100%;
+  max-width: 374px;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
   color: #484456;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
+
 .aboutFooterLinks {
-  width: 330px;
-  height: 24px;
-  transform: rotate(0deg);
-  opacity: 1;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
   display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  gap: 24px;
-}
-
-.aboutFooterLinks a {
-  width: 125px;
-  height: 24px;
-  transform: rotate(0deg);
-  opacity: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #5d6478;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
+  gap: 16px;
 }
 
+.aboutFooterLinks a,
 .aboutFooterLinks a:nth-child(2) {
-  width: 189px;
-  height: 24px;
-  transform: rotate(0deg);
-  opacity: 1;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
   color: #5d6478;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -927,4 +753,46 @@ body {
 
 body {
   animation: fadeIn 0.4s ease-in-out;
+}
+
+/* RESPONSIVE MEDIA QUERIES (Planshet va Desktop) */
+
+@media (min-width: 768px) {
+  .aboutMainContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20.02px 16px 20px;
+  }
+
+  .aboutLinks {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .aboutNavLinks {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .MainTwoColumn1 {
+    flex-direction: row;
+    top: 83.98px;
+  }
+
+  .profileCard {
+    flex-direction: row;
+  }
+
+  .MainTwoColumn2 {
+    flex-direction: row;
+    margin-top: 99px;
+  }
 }

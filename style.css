@@ -7,12 +7,12 @@
 body {
   width: 100%;
   min-height: 100vh;
-  height: 1032.17px;
+  /* height: 1032.17px; */
   margin: 0;
   padding: 0;
   background-color: #fcf8ff;
   color: #ffffff;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
@@ -21,8 +21,6 @@ body {
 
 .homeButunEkran {
   width: 100%;
-  /* max-width: 1280px; */
-  /* height: 1058px; */
   color: #ffffff;
   background-color: #fcf8ff;
   overflow-y: auto;
@@ -37,49 +35,46 @@ body {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  display: flex;
-  /* max-width: 1200px; */
+  width: 100%;
   height: fit-content;
-  height: 63.19px;
   background-color: #ffffff;
-  padding: 16px 20.02px 16px 20px;
+  padding: 12px 16px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 }
 
 .container1 {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column; 
+  align-items: center;
+  gap: 12px;
   width: 100%;
-  height: 63.19px;
+  height: auto;
+  min-height: 63.19px;
   max-width: 1200px;
-  justify-content: space-between;
   background-color: #ffffff;
-  padding: 16px 20.02px 16px 20px;
+  padding: 12px 16px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
 }
 
 .homeLinks {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column; 
+  justify-content: center;
   align-items: center;
   width: 100%;
-  width: 287px;
-  height: 22px;
+  max-width: 100%;
+  gap: 12px;
+  height: auto;
 }
+
 .homeNavLink0 {
   display: inline-flex;
   align-items: center;
-  width: 221.19px;
-  height: 31.19px;
-  width: 205px;
-  height: 32px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 31.2px;
+  font-size: 22px;
+  line-height: 28px;
   letter-spacing: 0px;
   color: #4a00e0;
   text-decoration: none;
@@ -89,16 +84,17 @@ body {
 .homeNavLinks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
   align-items: center;
-  width: 287px;
-  height: 22px;
-  gap: 24px;
+  width: auto;
+  height: auto;
+  gap: 16px;
 }
 
 .homeNavLink1 {
   display: flex;
   align-items: center;
-  width: 49px;
   height: 20px;
   padding-bottom: 4px;
   border-bottom: 2px solid #4a00e0;
@@ -111,14 +107,13 @@ body {
   text-decoration: none;
   background: #ffffff;
 }
+
 .homeNavLink2 {
   display: flex;
   align-items: center;
-  width: 116px;
   height: 22px;
   border-radius: 4px;
   padding: 4px 8px;
-  text-decoration: none;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -131,11 +126,9 @@ body {
 .homeNavLink3 {
   display: flex;
   align-items: center;
-  width: 74px;
   height: 22px;
   padding: 4px 8px;
   border-radius: 4px;
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -144,17 +137,17 @@ body {
   color: #484456;
   text-decoration: none;
 }
+
 .homeHireBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 127px;
+  width: auto;
   height: 30px;
   padding: 8px 16px;
   border-radius: 8px;
   background-color: #4a00e0;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -167,6 +160,7 @@ body {
 .homeHireBtn:hover {
   background-color: #3b00b3;
 }
+
 /* Main content  */
 .homeMain {
   display: flex;
@@ -175,14 +169,13 @@ body {
   justify-content: center;
   text-align: center;
   width: 100%;
-  /* max-width: 1280px; */
   height: fit-content;
   min-height: 748.58px;
-  margin-top: 63.19px;
-  padding-left: 40px;
-  padding-right: 40px;
-  
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .homeMainContainer {
   display: flex;
   flex-direction: column;
@@ -190,46 +183,51 @@ body {
   max-width: 1200px;
   height: fit-content;
   min-height: 748.58px;
-  padding: 48px 20px;
+  padding: 48px 0px;
   gap: 48px;
 }
 
 .homeHeroBlock {
   display: flex;
-  flex-direction: row;
-  width: 1160px;
-  height: 352px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1160px;
+  height: auto;
   border-radius: 12px;
-  padding: 48px;
-  gap: 48px;
+  padding: 24px;
+  gap: 24px;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  
 }
+
 .homeHeroAvatar {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 256px;
-  height: 256px;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
   border-radius: 9999px;
   background-color: #eeecfe;
   border: 4px solid #e9e6f8;
   overflow: hidden;
-  
 }
+
 .homeHeroAvatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .homeHeroContent {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  width: 618px;
-  height: 187px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 618px;
+  height: auto;
   gap: 16px;
   margin: 0 auto;
 }
@@ -237,47 +235,50 @@ body {
 .homeHeroName {
   width: 100%;
   max-width: 618px;
-  height: 39px;
+  height: auto;
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: 28px;
+  line-height: 34px;
   letter-spacing: -0.64px;
   color: #1a1a27;
 }
+
 .homeRoleBadge {
   width: 100%;
   max-width: 618px;
-  height: 26px;
+  height: auto;
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25.2px;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0px;
   color: #4a00e0;
 }
+
 .homeBioText {
   display: flex;
   flex-direction: column;
-  width: 618px;
-  height: 48px;
+  width: 100%;
   max-width: 672px;
+  height: auto;
   margin: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 22px;
   letter-spacing: 0px;
   color: #484456;
 }
+
 .homeWorksBtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 162.47px;
+  width: auto;
   height: 30px;
   padding: 8px 24px;
   border-radius: 8px;
@@ -285,7 +286,6 @@ body {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   border: none;
   cursor: pointer;
-
   color: #ffffff;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
@@ -299,6 +299,7 @@ body {
 .homeWorksBtn:hover {
   background-color: #3b00b3;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -307,32 +308,33 @@ a {
 
 .MainTwoColumn0 {
   display: flex;
+  flex-direction: column;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: auto;
-  height: 252.58px;
-  gap: 48px;
+  width: 100%;
+  height: auto;
+  gap: 24px;
 }
+
 .homeSkillsCard {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 556px;
-  height: 253.39px;
-  padding: 24px 24px 142.39px 24px;
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+  padding: 24px;
   gap: 16px;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
+
 .homeSkillsTitle {
   width: 100%;
-  max-width: 508px;
-  height: 35px;
+  max-width: 100%;
+  height: auto;
   padding-bottom: 8px;
   border-bottom: 1px solid #e3e0f2;
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -340,69 +342,31 @@ a {
   letter-spacing: 0px;
   color: #1a1a27;
 }
+
 .homeSkillsList {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  max-width: 508px;
-  height: 32px;
+  max-width: 100%;
+  height: auto;
   padding-top: 4px;
-  gap: 16px;
-}
-.homeSkillBadge1 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100px;
-  height: 32px;
-  padding: 8px 28.85px 8px 28.84px;
-  border-radius: 8px;
-  background-color: #eeecfe;
-  border: 1px solid #c9c3d9;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #484456;
-  text-align: center;
+  gap: 12px;
 }
 
-.homeSkillBadge2 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 100px;
-  height: 32px;
-  padding: 8px 33.45px 8px 33.44px;
-  border-radius: 8px;
-  background-color: #eeecfe;
-  border: 1px solid #c9c3d9;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  color: #484456;
-  text-align: center;
-}
+.homeSkillBadge1,
+.homeSkillBadge2,
 .homeSkillBadge3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 100px;
+  width: auto;
   height: 32px;
   padding: 8px 16px;
   border-radius: 8px;
   background-color: #eeecfe;
   border: 1px solid #c9c3d9;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -416,22 +380,21 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 556px;
-  height: 254px;
+  max-width: 100%;
+  height: auto;
   padding: 24px;
   gap: 16px;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
 }
+
 .homeCounterTitle {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 508px;
-  height: 35px;
+  max-width: 100%;
+  height: auto;
   padding-bottom: 8px;
   border-bottom: 1px solid #e3e0f2;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -448,11 +411,11 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 508px;
-  height: 151px;
+  max-width: 100%;
+  height: auto;
   margin-top: 4px;
-  padding: 24px;
-  gap: 24px;
+  padding: 20px;
+  gap: 20px;
   border-radius: 8px;
   background-color: #eeecfe;
 }
@@ -477,11 +440,13 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 208px;
+  width: auto;
   height: 40px;
-  gap: 16px;
+  gap: 12px;
 }
-.homeCounterBtnMinus {
+
+.homeCounterBtnMinus,
+.homeCounterBtnPlus {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,7 +466,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 101px;
+  width: auto;
   height: 40px;
   padding: 0 16px;
   border-radius: 8px;
@@ -518,21 +483,6 @@ a {
   text-align: center;
 }
 
-.homeCounterBtnPlus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: #4a00e0;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 1;
-}
 /* FOOTER  */
 .homeFooter {
   display: flex;
@@ -541,9 +491,8 @@ a {
   justify-content: center;
   text-align: center;
   width: 100%;
-  /* max-width: 1280px; */
-  height: 196px;
-  padding: 46px 20 48px 20;
+  height: auto;
+  padding: 40px 20px;
   background-color: #e9e6f8;
   margin: 0 auto;
   box-sizing: border-box;
@@ -555,8 +504,8 @@ a {
   align-items: center;
   width: 100%;
   max-width: 1280px;
-  /* height: 102px; */
-  padding: 48px 20px 48px 20px;
+  height: auto;
+  padding: 20px 0;
   gap: 16px;
   background: #e9e6f8;
   box-sizing: border-box;
@@ -568,8 +517,8 @@ a {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  width: 143px;
-  height: 14px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -577,15 +526,15 @@ a {
   letter-spacing: 0.7px;
   color: #1a1a27;
 }
+
 .homeFooterCopyright {
-  width: 374px;
-  height: 24px;
   width: 100%;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0px;
   color: #484456;
   display: flex;
@@ -597,10 +546,12 @@ a {
 
 .homeFooterLinks {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  width: 330px;
-  height: 24px;
+  width: 100%;
+  height: auto;
   gap: 16px;
 }
 
@@ -608,33 +559,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
-  height: 24px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   letter-spacing: 0px;
   color: #5d6478;
   text-decoration: none;
   text-align: center;
 }
 
-.homeFooterLinks a:nth-child(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 189px;
-  height: 24px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  color: #5d6478;
-  text-decoration: none;
-  text-align: center;
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -646,4 +582,72 @@ a {
 
 body {
   animation: fadeIn 0.4s ease-in-out;
+}
+
+/* RESPONSIVE MEDIA QUERIES (Planshet va Desktop)*/
+
+@media (min-width: 768px) {
+  .homeMainContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .homeMain {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container1 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20.02px 16px 20px;
+  }
+
+  .homeLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 287px;
+  }
+
+  .homeNavLinks {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .MainTwoColumn0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+
+  .homeHeroBlock {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 48px;
+    gap: 48px;
+  }
+
+  .homeHeroContent {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .homeNavContainer {
+    justify-content: space-between;
+  }
+
+  .homeSkillsCard,
+  .homeCounterCard {
+    width: 556px;
+    max-width: 556px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

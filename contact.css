@@ -3,21 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Html -> Body (Figma parametrlariga mos) */
+
 body {
   width: 100%;
   min-height: 100vh;
-  height: 1032.17px;
+  /* height: 1032.17px; */
   margin: 0;
   padding: 0;
   background-color: #fcf8ff;
   color: #ffffff;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
+
 a {
   text-decoration: none !important;
 }
+
 .kontaktButunEkran {
   width: 100%;
   background-color: #fcf8ff;
@@ -29,13 +34,11 @@ a {
 }
 
 .header {
-  /* width: 1280px; */
   width: 100%;
-  height: 63.19px;
-  transform: rotate(0deg);
-  opacity: 1;
-  padding-left: 40px;
-  padding-right: 40px;
+  height: auto;
+  min-height: 63.19px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
@@ -46,93 +49,69 @@ a {
 
 .navContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   width: 100%;
   height: auto;
   max-width: 1200px;
-  justify-content: space-between;
   background-color: #ffffff;
-  padding: 16px 20.02px 16px 20px;
+  padding: 12px 16px;
   margin: 0 auto;
 }
+
 .logo {
   display: inline-flex;
   align-items: center;
-  width: 221.19px;
-  height: 31.19px;
-  width: 205px;
-  height: 32px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 31.2px;
+  font-size: 22px;
+  line-height: 28px;
   letter-spacing: 0px;
   color: #4a00e0;
   text-decoration: none;
   white-space: nowrap;
 }
+
 .navLinks {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  max-width: 326.1px;
-  height: 30px;
-  padding-right: 2.12px;
-  gap: 24px;
-  opacity: 1;
+  max-width: 100%;
+  height: auto;
+  gap: 12px;
 }
 
-.KontaktNavLink1 {
-  width: 73px;
+.KontaktNavLink1,
+.KontaktNavLink2 {
+  width: auto;
   height: 30px;
-  padding: 8px 12px;
+  padding: 6px 12px;
   background: #ffffff;
   border-radius: 6px;
-  opacity: 1;
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.7px;
   color: #484456;
-  text-decoration: none;
-}
-.KontaktNavLink2 {
-  width: 122px;
-  height: 30px;
-  padding: 8px 12px;
-  color: #484456;
-  border-radius: 6px;
-  opacity: 1;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.7px;
-  background-color: #ffffff;
   text-decoration: none;
 }
 
 .KontaktNavLink3 {
-  width: 78.85px;
-  height: 26.6px;
-  padding: 1.7px 0px 1.7px 2.13px;
+  width: auto;
+  height: auto;
+  padding: 4px 8px;
   color: #4a00e0;
-  opacity: 1;
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -145,15 +124,14 @@ a {
   background: #ffffff;
   text-decoration: none;
 }
+
 .KontaktNavBtn {
-  width: 127px;
+  width: auto;
   height: 34px;
-  padding: 10px 16px;
+  padding: 8px 16px;
   background: #4a00e0;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  opacity: 1;
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -165,16 +143,12 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-.kontaktHireBtn:hover {
-  background-color: #3b00b3;
-}
 
 .kontaktMain {
-  width: 1280px;
-  height: 770.49px;
-  padding-left: 40px;
-  padding-right: 40px;
-  opacity: 1;
+  width: 100%;
+  min-height: 770.49;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -185,23 +159,22 @@ a {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 770.49px;
+  min-height: 770.49;
   max-width: 1200px;
-  padding: 48px 20px;
-  opacity: 1;
+  padding: 30px 0;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .kontaktTitleWrapper {
-  width: 672px;
-  height: 87.69px;
+  width: 100%;
   max-width: 672px;
-  padding-bottom: 48px;
-  opacity: 1;
+  height: auto;
+  padding-bottom: 30px;
   box-sizing: border-box;
   margin: 0 auto;
 }
+
 .kontaktTitle {
   width: 100%;
   height: auto;
@@ -212,20 +185,20 @@ a {
   text-align: center;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31.2px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: -0.52px;
-  text-align: center;
   color: #4a00e0;
-  padding-bottom: 7.69px;
+  padding-bottom: 6px;
   margin: 0;
 }
+
 .kontaktTitleLine {
   display: block;
-  width: 100px;
+  width: 80px;
   height: 3px;
   background-color: #4a00e0;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2px;
@@ -234,32 +207,25 @@ a {
 .kontaktBody {
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-direction: column;
   box-sizing: border-box;
   gap: 24px;
-  width: 896px;
-  height: auto;
+  width: 100%;
   max-width: 896px;
-  max-width: 100%;
-  opacity: 1;
 }
 
-/* Ichki elementlar o'lchami o'zgarmasligi uchun */
 .kontaktForm,
 .kontaktSocialBox {
   flex-shrink: 0;
 }
 
 .kontaktForm {
-  width: 589.33px;
-  height: 458px;
-  padding: 24px 24px 40px 24px;
-  opacity: 1;
+  width: 100%;
+  max-width: 589.33px;
+  height: auto;
+  min-height: 420px;
+  padding: 20px;
   border-radius: 12px;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column: span 2;
-  grid-row: span 1;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
@@ -267,27 +233,26 @@ a {
 }
 
 .kontaktFormInner {
-  width: 539.33px;
-  height: 392px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  opacity: 1;
   box-sizing: border-box;
 }
 
 .kontaktInputGroup {
-  width: 539.33px;
-  height: 67px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  opacity: 1;
   box-sizing: border-box;
 }
+
 .kontaktLabel {
-  width: 539.33px;
-  height: 14px;
+  width: 100%;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -296,64 +261,57 @@ a {
   color: #484456;
   display: flex;
   align-items: center;
-  opacity: 1;
-  box-sizing: border-box;
 }
+
 .kontaktInput {
-  width: 539.33px;
-  height: 49px;
-  padding: 13px 16px 14px 16px;
+  width: 100%;
+  height: 46px;
+  padding: 12px 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0px;
   color: #484456;
-  opacity: 1;
   border-radius: 8px;
   border: 1px solid #c9c3d9;
   background: #f5f2ff;
   box-sizing: border-box;
 }
-.kontaktInput::placeholder {
+
+.kontaktInput::placeholder,
+.kontaktTextarea::placeholder {
   color: #484456;
   opacity: 0.6;
 }
 
 .kontaktMessageGroup {
-  width: 539.33px;
-  height: 164px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  opacity: 1;
   box-sizing: border-box;
 }
 
 .kontaktTextarea {
-  width: 539.33px;
-  height: 146px;
-  padding: 12px 16px 108px 16px;
+  width: 100%;
+  height: 130px;
+  padding: 12px 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #484456;
-  opacity: 1;
   border-radius: 8px;
   border: 1px solid #c9c3d9;
   background: #f5f2ff;
   box-sizing: border-box;
   resize: none;
 }
-.kontaktTextarea::placeholder {
-  color: #484456;
-  opacity: 0.6;
-}
 
 .kontaktButton {
-  width: 112.58px;
+  width: 100%;
+  max-width: 112.58px;
   height: 38px;
-  padding: 12px 24px;
+  padding: 10px 16px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -361,10 +319,9 @@ a {
   letter-spacing: 0.7px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   color: #ffffff;
   background: #4a00e0;
-  opacity: 1;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -372,197 +329,152 @@ a {
 }
 
 .kontaktSocialBox {
-  width: 282.67px;
-  height: 460.81px;
-  padding: 100.4px 24px 100.41px 24px;
+  width: 100%;
+  max-width: 282.67px;
+  min-height: 420px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0px;
-  opacity: 1;
+  gap: 16px;
   border-radius: 12px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
+
 .kontaktSocialHeading {
   display: flex;
   align-items: flex-start;
-  width: 232.67px;
-  height: 42px;
-  padding-bottom: 16px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 8px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 25.2px;
-  letter-spacing: 0px;
   color: #1a1a27;
-  opacity: 1;
   box-sizing: border-box;
 }
+
 .kontaktSocialGap {
-  width: 232.67px;
-  height: 216px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
   list-style: none;
   padding: 0;
   margin: 0;
-  opacity: 1;
   box-sizing: border-box;
 }
 
-.kontaktSocialItem {
-  width: 232.67px;
-  height: 48px;
-  padding: 12px;
-  gap: 11.99px;
-  border-radius: 8px;
-  opacity: 1;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
-  list-style: none;
-}
-
+.kontaktSocialItem,
 .kontaktSocialLink {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 11.99px;
-  width: 232.67px;
-  height: 48px;
-  padding: 12px;
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  padding: 8px 12px;
   border-radius: 8px;
-  opacity: 1;
   text-decoration: none;
   box-sizing: border-box;
 }
+
 .kontaktIcon {
   width: 20px;
   height: 18px;
   fill: #4a00e0;
-  display: block;
   flex-shrink: 0;
 }
+
 .kontaktIconTg {
   width: 19px;
   height: 16px;
-  display: inline-block;
-  flex-shrink: 0;
   fill: #4a00e0;
+  flex-shrink: 0;
 }
 
 .kontaktIconYT {
   width: 20px;
   height: 20px;
-  display: inline-block;
-  flex-shrink: 0;
   fill: #4a00e0;
+  flex-shrink: 0;
 }
+
 .kontaktIconLI {
   width: 20px;
   height: 19px;
-  display: inline-block;
-  flex-shrink: 0;
   fill: #4a00e0;
+  flex-shrink: 0;
 }
 
 .kontaktSocialInsta,
 .kontaktSocialTg,
 .kontaktSocialYT,
 .kontaktSocialLI {
-  width: 76.3px;
-  height: 24px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-style: regular;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-size: 15px;
+  line-height: 20px;
   color: #484456;
-  vertical-align: middle;
-  display: inline-block;
-  box-sizing: border-box;
-}
-.kontaktSocialTg {
-  width: 70.11px;
-}
-.kontaktSocialYT {
-  width: 65.25px;
-}
-
-.kontaktSocialLI {
-  width: 63.72px;
 }
 
 .kontaktBannerCover {
-  width: 896px;
+  width: 100%;
   max-width: 896px;
-  height: 126.8px;
-  padding-top: 48px;
-  opacity: 1;
+  height: auto;
+  padding-top: 30px;
   box-sizing: border-box;
 }
+
 .kontaktBanner {
-  width: 896px;
+  width: 100%;
   max-width: 896px;
-  height: 78.8px;
-  padding-top: 23px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
+  height: auto;
+  padding: 20px;
   border-radius: 12px;
   border: 1px solid #e9e6f8;
   background: #f5f2ff;
-  opacity: 1;
   box-sizing: border-box;
 }
 
 .kontaktBannerText {
   width: 100%;
   height: auto;
-  padding-bottom: 0.8px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 28.8px;
-  letter-spacing: 0px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
-  vertical-align: middle;
   color: #6336fa;
-  opacity: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   box-sizing: border-box;
 }
 
 .kontaktFooter {
   width: 100%;
-  /* width: 1280px; */
-  height: 191px;
-  padding: 48px 40px;
+  min-height: 191px;
+  padding: 30px 20px;
   border-top: 1px solid #e9e6f8;
   background: #eeecfe;
-  opacity: 1;
   box-sizing: border-box;
 }
+
 .kontaktFooterContent {
-  width: 1200px;
+  width: 100%;
+  min-height: 94px;
   max-width: 1200px;
-  height: 94px;
-  padding-right: 20px;
-  padding-left: 20px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  opacity: 1;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -573,8 +485,8 @@ a {
   justify-content: center;
   text-align: center;
   box-sizing: border-box;
-  width: 143px;
-  height: 14px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -582,63 +494,50 @@ a {
   letter-spacing: 0.7px;
   color: #1a1a27;
 }
+
 .kontaktFooterCopyright {
-  width: 378px;
-  height: 24px;
+  width: 100%;
+  max-width: 378px;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-size: 14px;
+  line-height: 20px;
   color: #4a00e0;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
   text-align: center;
 }
 
 .kontaktFooterLinks {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  width: 330px;
-  height: 24px;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
   gap: 16px;
 }
 
-.kontaktFooterLinks a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 24px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  color: #5d6478;
-  text-decoration: none;
-  text-align: center;
-}
-
+.kontaktFooterLinks a,
 .kontaktFooterLinks a:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 189px;
-  height: 24px;
+  width: auto;
+  height: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-size: 15px;
+  line-height: 20px;
   color: #5d6478;
   text-decoration: none;
   text-align: center;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -650,4 +549,56 @@ a {
 
 body {
   animation: fadeIn 0.4s ease-in-out;
+}
+
+/* @media qism */
+
+@media (min-width: 768px) {
+  .kontaktMainContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 20.02px 16px 20px;
+  }
+
+  .navLinks {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 326.1px;
+    max-width: 326.1px;
+    flex-wrap: nowrap;
+  }
+
+  .kontaktBody {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .kontaktForm {
+    width: 589.33px;
+    max-width: 589.33px;
+  }
+
+  .kontaktSocialBox {
+    width: 282.67px;
+    max-width: 282.67px;
+  }
+
+  .kontaktFooterContent {
+    width: 1200px;
+    max-width: 1200px;
+    height: 94px;
+    flex-direction: column;
+  }
 }
