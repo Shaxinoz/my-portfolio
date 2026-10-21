@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //  BELGILAR SANOVCHI (about.html)
+  // 1. BELGILAR SANOVCHI (about.html)
   const charTextarea = document.querySelector(".counter-textarea");
-  const charCountNum = document.querySelector(".char-count-num");
+  const charCountNum = document.querySelector(".counter-number");
 
   if (charTextarea && charCountNum) {
     charTextarea.addEventListener("input", (event) => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  //  TUGMALAR HODISASI
+  // 2. TUGMALAR HODISASI
   const allButtons = document.querySelectorAll(".btn-works, .nav-btn, button");
   allButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //  FORMA YUBORILISHI
+  // 3. FORMA YUBORILISHI
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
@@ -32,10 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
       contactForm.reset();
     });
   }
-});
 
-// mini sanagich
-document.addEventListener("DOMContentLoaded", () => {
+  // 4. MINI FUNKSIYA: SANAGICH (Counter)
   const counterNumber = document.querySelector(".homeCounterValue");
   const btnMinus = document.querySelector(".homeCounterBtnMinus");
   const btnReset = document.querySelector(".homeCounterBtnReset");
@@ -60,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // 5. ISHLAR VA MENTORLIK TUGMALARI
   const worksBtn = document.querySelector(".homeWorksBtn");
   if (worksBtn) {
     worksBtn.addEventListener("click", () => {
@@ -69,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const hireBtn = document.querySelector(".homeHireBtn");
   if (hireBtn) {
-    hireBtn.addEventListener("click", () => {});
+    hireBtn.addEventListener("click", () => {
+      // Kerakli amalni shu yerga yozishingiz mumkin
+    });
   }
 });
