@@ -1,6 +1,3 @@
-<img width="358" height="912" alt="kontakt" src="https://github.com/user-attachments/assets/8ad753f5-db4d-4373-ae32-9e0eeabc7e3b" />
-<img width="376" height="912" alt="about" src="https://github.com/user-attachments/assets/a3f1156f-4611-463a-8a52-636ae4afd8f4" />
-<img width="372" height="914" alt="asosiy" src="https://github.com/user-attachments/assets/9ca04480-c8df-44e4-a462-d60ce6ef76ec" />
 # 🌐 Shahnoza Portfolio
 
 Backend Developer shaxsiy portfolio veb-sayti. Ushbu loyiha zamonaviy va sodda dizayn asosida yaratilgan bo'lib, ishlab chiquvchi haqida ma'lumotlar, biladigan texnologiyalari hamda interaktiv funksiyalarni o'z ichiga oladi.
@@ -44,12 +41,9 @@ MY-PORTFOLIO/
 └── README.md                # Loyiha haqida ma'lumot
 
 ## Loyihadan skrinshotlar
-
-<p align="center">
-  <img src="images/asosiy.png" width="300" alt="Mobil ko'rinish 1">
-  <img src="images/about.png" width="300" alt="Mobil ko'rinish 2">
-  <img src="images/kontakt.png" width="300" alt="Mobil ko'rinish 3">
-</p>
+<img width="358" height="912" alt="kontakt" src="https://github.com/user-attachments/assets/8ad753f5-db4d-4373-ae32-9e0eeabc7e3b" />
+<img width="376" height="912" alt="about" src="https://github.com/user-attachments/assets/a3f1156f-4611-463a-8a52-636ae4afd8f4" />
+<img width="372" height="914" alt="asosiy" src="https://github.com/user-attachments/assets/9ca04480-c8df-44e4-a462-d60ce6ef76ec" />
 
 ## 🔗 Demo Havola
 
