@@ -5,6 +5,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 
 export default [
   { ignores: ["dist"] },
+  js.configs.recommended,
   {
     files: ["**/*.{js,jsx}"],
     languageOptions: {
@@ -21,7 +22,6 @@ export default [
       "react-refresh": reactRefresh,
     },
     rules: {
-      ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
       "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
       "react-refresh/only-export-components": [
