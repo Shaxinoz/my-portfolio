@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. BELGILAR SANOVCHI (about.html)
+  //  BELGILAR SANOVCHI (about.html)
   const charTextarea = document.querySelector(".counter-textarea");
   const charCountNum = document.querySelector(".char-count-num");
 
@@ -9,32 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. COUNTER (index.html)
-  const counterNumber = document.querySelector(".counter-number");
-  const counterButtons = document.querySelectorAll(".counter-buttons button");
-
-  if (counterNumber && counterButtons.length > 0) {
-    let count = parseInt(counterNumber.textContent) || 0;
-
-    counterButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        // Matnni kichik harfga o'tkazib tekshiramiz (katta-kichik harf farq qilmasligi uchun)
-        const text = button.textContent.trim().toLowerCase();
-
-        if (text === "+") {
-          count++;
-        } else if (text === "-") {
-          count--;
-        } else if (text === "qaytarish" || text === "reset") {
-          count = 0;
-        }
-
-        counterNumber.textContent = count;
-      });
-    });
-  }
-
-  // 3. TUGMALAR HODISASI
+  //  TUGMALAR HODISASI
   const allButtons = document.querySelectorAll(".btn-works, .nav-btn, button");
   allButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -48,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 4. FORMA YUBORILISHI
+  //  FORMA YUBORILISHI
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
@@ -59,11 +34,41 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// const instagramBtn = document.querySelector(".social-link");
+// mini sanagich
+document.addEventListener("DOMContentLoaded", () => {
+  const counterNumber = document.querySelector(".homeCounterValue");
+  const btnMinus = document.querySelector(".homeCounterBtnMinus");
+  const btnReset = document.querySelector(".homeCounterBtnReset");
+  const btnPlus = document.querySelector(".homeCounterBtnPlus");
 
-// if (instagramBtn) {
-//   instagramBtn.addEventListener("click", (e) => {
-//     e.preventDefault(); // Sahifa qayta yuklanib ketishini to'xtatadi
-//     window.open("https://instagram.com/shahnozaisha", "_blank");
-//   });
-// }
+  if (counterNumber && btnMinus && btnReset && btnPlus) {
+    let count = parseInt(counterNumber.textContent) || 0;
+
+    btnMinus.addEventListener("click", () => {
+      count--;
+      counterNumber.textContent = count;
+    });
+
+    btnReset.addEventListener("click", () => {
+      count = 0;
+      counterNumber.textContent = count;
+    });
+
+    btnPlus.addEventListener("click", () => {
+      count++;
+      counterNumber.textContent = count;
+    });
+  }
+
+  const worksBtn = document.querySelector(".homeWorksBtn");
+  if (worksBtn) {
+    worksBtn.addEventListener("click", () => {
+      alert("Mening ishlarim bo'limiga o'tilmoqda...");
+    });
+  }
+
+  const hireBtn = document.querySelector(".homeHireBtn");
+  if (hireBtn) {
+    hireBtn.addEventListener("click", () => {});
+  }
+});
