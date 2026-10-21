@@ -13,13 +13,13 @@ Backend Developer shaxsiy portfolio veb-sayti. Ushbu loyiha zamonaviy va sodda d
 
 # 🚀 My Portfolio Website
 
-Bu mening shaxsiy portfolio loyiham bo'lib, zamonaviy veb-dizayn standartlari va **Mobile-First** yondashuvi asosida qurilgan. Loyihada foydalanuvchi interfeysi, sahifalararo o'tishlar va kichik interaktiv funksiyalar mavjud[cite: 5].
+Bu mening shaxsiy portfolio loyiham bo'lib, zamonaviy veb-dizayn standartlari va **Mobile-First** yondashuvi asosida qurilgan. Loyihada foydalanuvchi interfeysi, sahifalararo o'tishlar va kichik interaktiv funksiyalar mavjud.
 
 ---
 
 ## 📁 Loyiha Strukturasi
 
-Loyihaning fayl va papkalar tuzilishi quyidagicha ko'rinishga ega[cite: 5]:
+Loyihaning fayl va papkalar tuzilishi quyidagicha ko'rinishga ega:
 
 ```text
 MY-PORTFOLIO/
