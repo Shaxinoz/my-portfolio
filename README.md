@@ -41,3 +41,17 @@ MY-PORTFOLIO/
 ├── package-lock.json        # Paketlar versiyalari tarixi
 └── README.md                # Loyiha haqida ma'lumot
 ```
+
+## 📱 Loyihadan skrinshotlar
+
+### 1. Asosiy sahifa
+
+![Asosiy sahifa](images/asosiy.png)
+
+### 2. Men haqimda sahifasi
+
+![Men haqimda](images/about.png)
+
+### 3. Kontakt sahifasi
+
+![Kontakt](images/kontakt.png)
