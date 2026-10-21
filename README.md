@@ -1,3 +1,6 @@
+<img width="358" height="912" alt="kontakt" src="https://github.com/user-attachments/assets/8ad753f5-db4d-4373-ae32-9e0eeabc7e3b" />
+<img width="376" height="912" alt="about" src="https://github.com/user-attachments/assets/a3f1156f-4611-463a-8a52-636ae4afd8f4" />
+<img width="372" height="914" alt="asosiy" src="https://github.com/user-attachments/assets/9ca04480-c8df-44e4-a462-d60ce6ef76ec" />
 # 🌐 Shahnoza Portfolio
 
 Backend Developer shaxsiy portfolio veb-sayti. Ushbu loyiha zamonaviy va sodda dizayn asosida yaratilgan bo'lib, ishlab chiquvchi haqida ma'lumotlar, biladigan texnologiyalari hamda interaktiv funksiyalarni o'z ichiga oladi.
