@@ -9,7 +9,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  /* height: 1032.17px; */
+  /* min-height: 1032.17px; */
   margin: 0;
   padding: 0;
   background-color: #fcf8ff;
@@ -147,7 +147,7 @@ a {
 
 .kontaktMain {
   width: 100%;
-  min-height: 770.49;
+  min-height: 770.49px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -160,7 +160,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  min-height: 770.49;
+  height: auto;
   max-width: 1200px;
   padding: 30px 0;
   box-sizing: border-box;
@@ -213,6 +213,7 @@ a {
   gap: 24px;
   width: 100%;
   max-width: 896px;
+  margin: 0 auto;
 }
 
 .kontaktForm,
