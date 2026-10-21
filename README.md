@@ -10,15 +10,16 @@ Backend Developer shaxsiy portfolio veb-sayti. Ushbu loyiha zamonaviy va sodda d
 - **Git & GitHub** — Versiyalarni boshqarish va kodlarni saqlash
 
 ---
+
 # 🚀 My Portfolio Website
 
-Bu mening shaxsiy portfolio loyiham bo'lib, zamonaviy veb-dizayn standartlari va **Mobile-First** yondashuvi asosida qurilgan. Loyihada foydalanuvchi interfeysi, sahifalararo o'tishlar va kichik interaktiv funksiyalar mavjud.
+Bu mening shaxsiy portfolio loyiham bo'lib, zamonaviy veb-dizayn standartlari va **Mobile-First** yondashuvi asosida qurilgan. Loyihada foydalanuvchi interfeysi, sahifalararo o'tishlar va kichik interaktiv funksiyalar mavjud[cite: 5].
 
 ---
 
 ## 📁 Loyiha Strukturasi
 
-Loyihaning fayl va papkalar tuzilishi quyidagicha ko'rinishga ega:
+Loyihaning fayl va papkalar tuzilishi quyidagicha ko'rinishga ega[cite: 5]:
 
 ```text
 MY-PORTFOLIO/
@@ -39,16 +40,4 @@ MY-PORTFOLIO/
 ├── package.json             # Loyiha konfiguratsiyasi
 ├── package-lock.json        # Paketlar versiyalari tarixi
 └── README.md                # Loyiha haqida ma'lumot
-
-## Loyihadan skrinshotlar
-
-<p align="center">
-  <img src="images/asosiy.png" width="300" alt="Mobil ko'rinish 1">
-  <img src="images/about.png" width="300" alt="Mobil ko'rinish 2">
-  <img src="images/kontakt.png" width="300" alt="Mobil ko'rinish 3">
-</p>
-
-## 🔗 Demo Havola
-
-Loyihaning jonli versiyasini quyidagi havola orqali ko'rishingiz mumkin:
-👉 [Shahnoza Portfolio Live] https://shaxinoz.github.io/my-portfolio/
+```
