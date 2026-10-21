@@ -55,3 +55,8 @@ MY-PORTFOLIO/
 ### 3. Kontakt sahifasi
 
 ![Kontakt](images/kontakt.png)
+
+## 🔗 Demo Havola
+
+Loyihaning jonli versiyasini quyidagi havola orqali ko'rishingiz mumkin:
+👉 [Shahnoza Portfolio Live](https://shaxinoz.github.io/my-portfolio/)
