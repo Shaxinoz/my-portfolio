@@ -654,3 +654,17 @@ body {
     margin: 0 auto;
   }
 }
+@media (max-width: 768px) {
+  /* Mobil ekranlar uchun */
+  .homeFooter,
+  .homeFooterContent {
+    background-color: #4a00e0 !important;
+    color: #ffffff !important;
+  }
+
+  .homeFooterTitle,
+  .homeFooterCopyright,
+  .homeFooterLinks a {
+    color: #ffffff !important;
+  }
+}

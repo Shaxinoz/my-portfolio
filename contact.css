@@ -620,3 +620,17 @@ body {
     margin: 0 auto;
   }
 }
+@media (max-width: 768px) {
+  /* Mobil ekranlar uchun */
+  .kontaktFooter,
+  .kontaktFooterContent {
+    background-color: #4a00e0 !important;
+    color: #ffffff !important;
+  }
+
+  .kontaktFooterTitle,
+  .kontaktFooterCopyright,
+  .kontaktFooterLinks a {
+    color: #ffffff !important;
+  }
+}

@@ -809,3 +809,17 @@ body {
     margin: 0 auto;
   }
 }
+@media (max-width: 768px) {
+  /* Mobil ekranlar uchun */
+  .aboutFooter,
+  .aboutFooterContent {
+    background-color: #4a00e0 !important;
+    color: #ffffff !important;
+  }
+
+  .aboutFooterTitle,
+  .aboutFooterCopyright,
+  .aboutFooterLinks a {
+    color: #ffffff !important;
+  }
+}
