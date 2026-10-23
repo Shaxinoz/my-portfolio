@@ -42,8 +42,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  
-  
+  gap: 20px;
 }
 
 .aboutContainer {
@@ -232,6 +231,7 @@ body {
   height: auto;
   gap: 28px;
   top: 48px;
+  margin-bottom: 24px;
 }
 
 .profileCard {
@@ -338,6 +338,7 @@ body {
 
 .aboutInterestsSection {
   width: 100%;
+  max-width: 100%;
   max-width: 370.67px;
   min-height: 245.19px;
   height: auto;
@@ -419,11 +420,13 @@ body {
   max-width: 1160px;
   height: auto;
   gap: 28px;
-  margin-top: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .aboutSkillsSection {
   width: 100%;
+  max-width: 100%;
   max-width: 568px;
   min-height: 304.38px;
   height: auto;
@@ -520,6 +523,7 @@ body {
 
 .counter-card {
   width: 100%;
+  max-width: 100%;
   max-width: 568px;
   height: auto;
   transform: rotate(0deg);
@@ -664,7 +668,7 @@ body {
   height: auto;
   background-color: #e9e6f8;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 40px 20px;
   box-sizing: border-box;
 }
 
@@ -787,6 +791,7 @@ body {
   .MainTwoColumn1 {
     flex-direction: row;
     top: 83.98px;
+    margin-bottom: 0;
   }
 
   .profileCard {
@@ -796,5 +801,11 @@ body {
   .MainTwoColumn2 {
     flex-direction: row;
     margin-top: 99px;
+  }
+}
+@media (min-width: 1201px) {
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

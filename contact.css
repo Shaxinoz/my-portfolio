@@ -211,12 +211,14 @@ a {
 .kontaktBody {
   display: flex;
   align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   box-sizing: border-box;
   gap: 24px;
   width: 100%;
   max-width: 896px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .kontaktForm,
@@ -609,5 +611,12 @@ body {
     max-width: 1200px;
     height: 94px;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let count = parseInt(counterNumber.textContent) || 0;
 
     btnMinus.addEventListener("click", () => {
-      count--;
+      if (count > 0) count--;
       counterNumber.textContent = count;
     });
 
