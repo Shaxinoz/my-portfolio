@@ -496,7 +496,7 @@ a {
   width: 100%;
   height: auto;
   padding: 40px 20px;
-  background-color: #e9e6f8;
+  background-color: #eeecfe;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -510,7 +510,6 @@ a {
   height: auto;
   padding: 20px 0;
   gap: 16px;
-  background: #e9e6f8;
   box-sizing: border-box;
 }
 
