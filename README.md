@@ -46,15 +46,15 @@ MY-PORTFOLIO/
 
 ### 1. Asosiy sahifa
 
-![Asosiy sahifa](images/asosiy.png)
+![Asosiy sahifa](images/asosiy-1.png)
 
 ### 2. Men haqimda sahifasi
 
-![Men haqimda](images/about.png)
+![Men haqimda](images/about-2.png)
 
 ### 3. Kontakt sahifasi
 
-![Kontakt](images/kontakt.png)
+![Kontakt](images/kontakt-3.png)
 
 ## 🔗 Demo Havola
 
